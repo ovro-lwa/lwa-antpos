@@ -5,26 +5,37 @@ from . import reading
 CNFCONF = resource_filename("lwa_antpos", "data/cnfConfig.yml")
 # TODO: eventually my_cnf can be read from etcd here
 df = reading.read_antpos_xlsx()
-dd = {'ant': df, 'fpga': df}
+dd = {'ant': df.set_index('Name'), 'fpga': df.set_index('FPGA')}
 my_cnf = cnf.Conf(data=dd, cnf_conf=CNFCONF)
 
 
 def antenna(name):
+    """ Get metadata for one antenna from datafram.
+    """
+
+    df_ant = my_cnf.get('ant')
+    
+    return df_ant.loc[name]
+
+
+def baseline(a1, a2):
     """ Load xlsx file and return ant metadata.
     returns metadata as pandas dataframe indexed by antenna.
     TODO: add argument to select antennas
     """
 
-    df_ant = my_cnf.get('ant').set_index('Name')
+    df_ant = my_cnf.get('ant')
     
-    return df_ant.loc[name]
+    d1 = df_ant.loc[a1]
+    d2 = df_ant.loc[a2]
+    return d1, d2
 
 
 def fpga(number):
-    """ Load xlsx file and return fpga metadata.
-    returns metadata as pandas dataframe indexed by fpga.
+    """ Get metadata for an FPGA as dataframe.
     """
 
-    df_fpga = my_cnf.get('fpga').set_index('FPGA')
+    df_fpga = my_cnf.get('fpga')
+
     return df_fpga.loc[number]
 
