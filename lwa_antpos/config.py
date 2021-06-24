@@ -7,7 +7,8 @@ __all__ = ['lwa_cnf']
 CNFCONF = resource_filename("lwa_antpos", "data/cnfConfig.yml")
 # TODO: eventually my_cnf can be read from etcd here
 df = reading.read_antpos_xlsx()
-dd = {'ant': df.set_index('Name'), 'fpga': df.set_index('FPGA')}
+dd = {'ant': df.set_index('Antenna number')
+#      , 'fpga': df.set_index('FPGA')}  # or "Group to unique SNAP2"?
 lwa_cnf = cnf.Conf(data=dd, cnf_conf=CNFCONF)
 
 
