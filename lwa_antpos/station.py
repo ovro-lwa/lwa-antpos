@@ -8,11 +8,9 @@ from pandas import DataFrame
 from astropy.coordinates import EarthLocation
 import astropy.units as u
 
-from .config import lwa_cnf
+from . import lwa_cnf
 
-__all__ = ['Station', 'Antenna', 'parse_config', 'lwa352']
-
-OVRO_CONFIG_FILENAME = os.path.join(os.path.dirname(__file__), 'ovro.txt')
+__all__ = ['Station', 'Antenna', 'parse_config', 'ovro']
 
 
 def _smart_int(s, positive_only=False):
@@ -199,4 +197,4 @@ def parse_config(filename=None):
 
 
 # A ready-made Station instance, filled with Antennas
-#ovrolwa = parse_config() # or use arg OVRO_CONFIG_FILENAME for text file
+ovro = parse_config() # or use arg OVRO_CONFIG_FILENAME for text file
