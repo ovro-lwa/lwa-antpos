@@ -7,9 +7,11 @@ __all__ = ['lwa_cnf']
 CNFCONF = resource_filename("lwa_antpos", "data/cnfConfig.yml")
 # TODO: eventually my_cnf can be read from etcd here
 df = reading.read_antpos_xlsx()
-dd = {'ant': df.set_index('Antenna number')
-#      , 'fpga': df.set_index('FPGA')}  # or "Group to unique SNAP2"?
-lwa_cnf = cnf.Conf(data=dd, cnf_conf=CNFCONF)
+dds = {'ant': {}}
+for ind in df.index:
+    dd = df.loc[ind]
+    dds['ant'][ind] = dd
+lwa_cnf = cnf.Conf(data=dds, cnf_conf=CNFCONF)
 
 
 def antenna(name):
@@ -23,22 +25,11 @@ def antenna(name):
 
 def baseline(a1, a2):
     """ Load xlsx file and return ant metadata.
-    returns metadata as pandas dataframe indexed by antenna.
-    TODO: add argument to select antennas
+    returns (x,y) tuples for a1 and a2 in units of meters relative to LWA-000.
     """
 
     df_ant = lwa_cnf.get('ant')
     
     d1 = df_ant.loc[a1]
     d2 = df_ant.loc[a2]
-    return d1, d2
-
-
-def fpga(number):
-    """ Get metadata for an FPGA as dataframe.
-    """
-
-    df_fpga = lwa_cnf.get('fpga')
-
-    return df_fpga.loc[number]
-
+    return (d1.x, d1.y), (d2.x, d2.y)

@@ -1,4 +1,3 @@
 # Config for cnf.py in YAML format
 # Specifies mapping between logical subsystem names to etcd key names
 ant: /cnf/ant
-fpga: /cnf/fpga

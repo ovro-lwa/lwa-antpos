@@ -4,6 +4,7 @@ import copy
 import numpy
 import weakref
 
+from pandas import DataFrame
 from astropy.coordinates import EarthLocation
 import astropy.units as u
 
@@ -52,12 +53,12 @@ class Station(object):
     @classmethod
     def from_df(cls, df):
         row = df.loc['LWA-000']
-        lat = float(row.Latitude) * numpy.pi/180
-        lon = float(row.Longitude) * numpy.pi/180
+        lat = float(row.latitude) * numpy.pi/180
+        lon = float(row.longitude) * numpy.pi/180
         elev = 1222.0        # TODO: get from cnf
         st = cls('OVRO-LWA', lat, lon, elev)
 
-        for idx, row in df[df['Used in LWA-352?'] == 'YES'].iterrows():
+        for idx, row in df[df['used'] == 'YES'].iterrows():
             ant = Antenna.from_df(row)
             st.append(ant)
 
@@ -144,8 +145,8 @@ class Antenna(object):
         """
         Create a new Antenna instance from df row (Series).
         """
-        lat = float(row.Latitude) * numpy.pi/180
-        lon = float(row.Longitude) * numpy.pi/180
+        lat = float(row.latitude) * numpy.pi/180
+        lon = float(row.longitude) * numpy.pi/180
         elev = 1222.0        # Is this right?
         return cls(row.name, lat, lon, elev)
         
@@ -178,7 +179,7 @@ def parse_config(filename=None):
     """
 
     if filename is None:
-        df_ant = lwa_cnf.get('ant')
+        df_ant = DataFrame.from_dict(lwa_cnf.get('ant'), orient='index')
         st = Station.from_df(df_ant)
     else:
         with open(filename, 'r') as fh:
@@ -198,4 +199,4 @@ def parse_config(filename=None):
 
 
 # A ready-made Station instance, filled with Antennas
-ovrolwa = parse_config() # or use arg OVRO_CONFIG_FILENAME for text file
+#ovrolwa = parse_config() # or use arg OVRO_CONFIG_FILENAME for text file
