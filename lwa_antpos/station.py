@@ -170,16 +170,16 @@ class Antenna(object):
         return (e.x.to_value(u.m), e.y.to_value(u.m), e.z.to_value(u.m))
         
     
-def parse_config(filename=None):
+def parse_config(etcdserver=None, filename=None):
     """
     Parse OVRO-LWA configuration and return a Station instance.
-    Default will use lwa_cnf, but can also use text file as argument.
+    Without arguments, it will use lwa_cnf.
+    Can optionally get data from etcd server or static file.
     """
 
-    if filename is None:
-        df_ant = DataFrame.from_dict(lwa_cnf.get('ant'), orient='index')
-        st = Station.from_df(df_ant)
-    else:
+    if etcdserver is not None:
+        pass
+    elif filename is not None:
         with open(filename, 'r') as fh:
             for line in fh:
                 if len(line) < 3:
@@ -192,6 +192,9 @@ def parse_config(filename=None):
                 elif line.find('NO') == -1:
                     ant = Antenna.from_line(line)
                     st.append(ant)
+    else:
+        df_ant = DataFrame.from_dict(lwa_cnf.get('ant'), orient='index')
+        st = Station.from_df(df_ant)
                 
     return st
 

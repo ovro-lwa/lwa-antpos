@@ -8,7 +8,7 @@ antposfile = resource_filename("lwa_antpos", "data/LWA-352 Antenna Status & Syst
 def read_antpos_xlsx(filename=antposfile):
     df = pd.read_excel(filename, engine='openpyxl', header=1)
     df.drop(index=0, inplace=True)  # descriptive header should be dropped
-    df.drop(columns='etcd key part', inplace=True)  # descriptive column should be dropped
+    df.drop(columns='dict_key', inplace=True)  # descriptive column should be dropped
     assert "antname" in df.columns
     df = df.set_index('antname')
 
