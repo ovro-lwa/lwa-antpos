@@ -6,6 +6,9 @@ antposfile = resource_filename("lwa_antpos", "data/LWA-352 Antenna Status & Syst
 
 
 def read_antpos_xlsx(filename=antposfile):
+    """ Gets data from xlsx file and returns dataframe
+    """
+
     df = pd.read_excel(filename, engine='openpyxl', header=1)
     df.drop(index=0, inplace=True)  # descriptive header should be dropped
     df.drop(columns='dict_key', inplace=True)  # descriptive column should be dropped
@@ -13,3 +16,9 @@ def read_antpos_xlsx(filename=antposfile):
     df = df.set_index('antname')
 
     return df
+
+def read_antpos_etcd(host, port):
+    """ Gets data from etcd and returns dataframe
+    """
+
+    raise
