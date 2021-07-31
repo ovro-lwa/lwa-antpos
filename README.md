@@ -11,6 +11,9 @@
 `python setup.py install`
 
 # Usage
+
+Station class with coordinates:
+
 ```
 > from lwa_antpos import station
 > st = station.ovrolwa
@@ -26,4 +29,14 @@ Station LWA-000 with 352 antennas
 > ant = st.antennas[0]
 > print(ant.lat, ant.lon)
 0.6499685035526378, -2.064391274631196
+```
+
+Mapping antenna name to ARX, SNAP2, etc:
+
+```
+> from lwa_antpos import mapping
+Read antpos from xlsx file in repo
+> mapping.ant_to_snap2('LWA-300')
+(2, 11)
+> mapping.antpol_to_arx('LWA-235', 'a')
 ```
