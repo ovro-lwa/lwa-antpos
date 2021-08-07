@@ -27,7 +27,7 @@ def read_antpos_etcd(host='10.42.0.64', port=2379):
 
     le = etcd3.client(host, port)
     dds, _ = le.get('/cfg/system') 
-    dd = json.loads(dd.decode("utf-8"))['lwacfg']
+    dd = json.loads(dds.decode("utf-8"))['lwacfg']
     
     df = pd.DataFrame.from_dict(dd)
     assert "antname" in df.columns
