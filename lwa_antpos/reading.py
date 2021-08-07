@@ -1,4 +1,5 @@
 import pandas as pd
+import yaml
 from pkg_resources import resource_filename
 
 antposfile = resource_filename("lwa_antpos", "data/LWA-352 Antenna Status & System Configuration.xlsx")
@@ -22,3 +23,17 @@ def read_antpos_etcd(host, port):
     """
 
     raise
+
+
+def read_antpos_yaml(filename):
+    """ Gets data from yaml and returns dataframe
+    """
+
+    with open(filename, 'r') as fp:
+        dd = yaml.load(fp)
+
+    df = pd.DataFrame.from_dict(dd)
+    assert "antname" in df.columns
+    df.set_index('antname', inplace=True)
+
+    return df
