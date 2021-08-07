@@ -1,6 +1,7 @@
-import pandas as pd
 import yaml
 import json
+import pandas as pd
+import etcd3
 from pkg_resources import resource_filename
 
 antposfile = resource_filename("lwa_antpos", "data/LWA-352 Antenna Status & System Configuration.xlsx")
@@ -24,6 +25,7 @@ def read_antpos_etcd(host='10.42.0.64', port=2379):
     """ Gets data from etcd and returns dataframe
     """
 
+    le = etcd3.client(host, port)
     dds, _ = le.get('/cfg/system') 
     dd = json.loads(dd.decode("utf-8"))['lwacfg']
     
