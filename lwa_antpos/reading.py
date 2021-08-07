@@ -29,7 +29,7 @@ def read_antpos_etcd(host='10.42.0.64', port=2379):
     dds, _ = le.get('/cfg/system') 
     dd = json.loads(dds.decode("utf-8"))['lwacfg']
     
-    df = pd.DataFrame.from_dict(dd)
+    df = pd.DataFrame.from_dict(dd, orient='index')
     assert "antname" in df.columns
     df.set_index('antname', inplace=True)
 
@@ -43,7 +43,7 @@ def read_antpos_yaml(filename):
     with open(filename, 'r') as fp:
         dd = yaml.load(fp)
 
-    df = pd.DataFrame.from_dict(dd)
+    df = pd.DataFrame.from_dict(dd, orient='index')
     assert "antname" in df.columns
     df.set_index('antname', inplace=True)
 
