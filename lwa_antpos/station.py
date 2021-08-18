@@ -8,9 +8,15 @@ from pandas import DataFrame
 from astropy.coordinates import EarthLocation
 import astropy.units as u
 
-from . import lwa_cnf
+from . import lwa_cnf, lwa_df
 
 __all__ = ['Station', 'Antenna', 'parse_config', 'ovro']
+
+
+row = lwa_df.loc['LWA-000']
+ovro_lat = float(row.latitude) * numpy.pi/180
+ovro_lon = float(row.longitude) * numpy.pi/180
+ovro_elev = 1222.0        # TODO: get from cnf
 
 
 def _smart_int(s, positive_only=False):
@@ -35,7 +41,7 @@ class Station(object):
     Class to represent the OVRO-LWA station and its antennas.
     """
     
-    def __init__(self, name, lat, lon, elev, antennas=None):
+    def __init__(self, name, lat=ovro_lat, lon=ovro_lon, elev=ovro_elev, antennas=None):
         self.name = name
         self.lat = lat
         self.lon = lon
@@ -50,10 +56,6 @@ class Station(object):
 
     @classmethod
     def from_df(cls, df):
-        row = df.loc['LWA-000']
-        lat = float(row.latitude) * numpy.pi/180
-        lon = float(row.longitude) * numpy.pi/180
-        elev = 1222.0        # TODO: get from cnf
         st = cls('OVRO-LWA', lat, lon, elev)
 
         for idx, row in df[df['used'] == 'YES'].iterrows():
@@ -157,7 +159,6 @@ class Antenna(object):
         name, lat, lon, x, y, active = line.split(None, 5)
         lat = float(lat) * numpy.pi/180
         lon = float(lon) * numpy.pi/180
-        elev = 1222.0        # Is this right?
         return cls(name, lat, lon, elev)
         
     @property
@@ -177,6 +178,8 @@ def parse_config(etcdserver=None, filename=None):
     Can optionally get data from etcd server or static file.
     """
 
+    st = Station('OVRO-LWA')
+
     if etcdserver is not None:
         pass
     elif filename is not None:
@@ -187,9 +190,7 @@ def parse_config(etcdserver=None, filename=None):
                 elif line[0] == '#':
                     continue
                 
-                if line.startswith('LWA-000'):
-                    st = Station.from_line(line)
-                elif line.find('NO') == -1:
+                if line.find('NO') == -1:
                     ant = Antenna.from_line(line)
                     st.append(ant)
     else:

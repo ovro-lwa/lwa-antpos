@@ -1,4 +1,4 @@
-__all__ = ['reading', 'station', 'lwa_cnf', 'lwa_df']
+__all__ = ['reading', 'station', 'lwa_cnf', 'lwa_df', 'antnames']
 
 import dsautils.cnf as cnf
 from pkg_resources import resource_filename
@@ -13,8 +13,10 @@ except:
     lwa_df = reading.read_antpos_xlsx()
     print('Read antpos from xlsx file in repo')
 
+antnames = lwa_df[lwa_df.used == 'YES'].index
+
 dds = {'ant': {}}
-for ind in lwa_df.index:
+for ind in antnames:
     dd = lwa_df.loc[ind]
     dds['ant'][ind] = dd
 lwa_cnf = cnf.Conf(data=dds, cnf_conf=CNFCONF)

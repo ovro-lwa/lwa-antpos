@@ -22,14 +22,14 @@ def antpol_to_arx(antname, polname):
     """ Given antname and polname, return arx channel
     """
 
-    return lwa_df.loc[antname][f'pol{polname}_arx_channel']
+    return lwa_df.loc[antname][f'pol{polname.lower()}_arx_channel']
 
 
 def antpol_to_digitizer(antname, polname):
     """ Given antname and polname, return digitizer channel
     """
 
-    return lwa_df.loc[antname][f'pol{polname}_digitizer_channel']
+    return lwa_df.loc[antname][f'pol{polname.lower()}_digitizer_channel']
 
 
 def ant_to_snap2(antname):
@@ -37,3 +37,31 @@ def ant_to_snap2(antname):
     """
 
     return (lwa_df.loc[antname]['snap2_chassis'], lwa_df.loc[antname]['snap2_location'])
+
+
+def digitizer_to_ants(digitizer, pol):
+    """ Given digitizer channel and pol, return a list of ant names.
+    """
+
+    return filter_df(f'pol{pol.lower()}_digitizer_channel', digitizer).index
+
+
+def antpol_to_correlator(antname, polname):
+    """ Given antname and polname, return correlator number
+    """
+
+    chassis, location = ant_to_snap2(antname)
+    digitizer = antpol_to_digitizer(antname, polname)
+    return 64*(location-1) + digitizer
+
+
+def correlator_to_antpol(correlator_number):
+    """ Get ant/pol for a given correlator_number.
+    """
+
+    digitizer = correlator_number % 64
+    location = correlator_number // 64
+
+    return lwa_df[(lwa_df.snap2_location == location) & (lwa_df.pola_digitizer_channel == digitizer) | (lwa_df.polb_digitizer_channel == digitizer)]
+
+
