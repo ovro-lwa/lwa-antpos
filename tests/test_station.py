@@ -3,8 +3,8 @@ import pytest
 from lwa_antpos import station
 
 def test_ovrolwa():
-    ovrolwa = station.ovrolwa
-    assert len(ovrolwa.antennas) == 352
+    ovro = station.ovro
+    assert len(ovro.antennas) == 352
 
 def test_station():
     st = station.Station('station', 0, 0, 0)

@@ -55,10 +55,10 @@ class Station(object):
 
     @classmethod
     def from_df(cls, df):
-        st = cls('OVRO-LWA', ovro_lat, ovro_lon, ovro_elev)
+        st = cls('ovro', ovro_lat, ovro_lon, ovro_elev)
 
         for antname in antnames:
-            row = df.iloc[antname]
+            row = df.loc[antname]
             ant = Antenna.from_df(row)
             st.append(ant)
 
@@ -178,7 +178,7 @@ def parse_config(etcdserver=None, filename=None):
     Can optionally get data from etcd server or static file.
     """
 
-    st = Station('OVRO-LWA')
+    st = Station('ovro')
 
     if etcdserver is not None:
         pass
