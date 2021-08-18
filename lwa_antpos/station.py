@@ -8,10 +8,9 @@ from pandas import DataFrame
 from astropy.coordinates import EarthLocation
 import astropy.units as u
 
-from . import lwa_cnf, lwa_df
+from . import lwa_cnf, lwa_df, antnames
 
 __all__ = ['Station', 'Antenna', 'parse_config', 'ovro']
-
 
 row = lwa_df.loc['LWA-000']
 ovro_lat = float(row.latitude) * numpy.pi/180
@@ -56,9 +55,10 @@ class Station(object):
 
     @classmethod
     def from_df(cls, df):
-        st = cls('OVRO-LWA', lat, lon, elev)
+        st = cls('OVRO-LWA', ovro_lat, ovro_lon, ovro_elev)
 
-        for idx, row in df[df['used'] == 'YES'].iterrows():
+        for antname in antnames:
+            row = df.iloc[antname]
             ant = Antenna.from_df(row)
             st.append(ant)
 
