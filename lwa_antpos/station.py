@@ -12,9 +12,9 @@ from . import lwa_cnf, lwa_df, antnames
 
 __all__ = ['Station', 'Antenna', 'parse_config', 'ovro']
 
-row = lwa_df.loc['LWA-000']
-ovro_lat = float(row.latitude) * numpy.pi/180
-ovro_lon = float(row.longitude) * numpy.pi/180
+center = lwa_df.loc['LWA-000']
+ovro_lat = float(center.latitude) * numpy.pi/180
+ovro_lon = float(center.longitude) * numpy.pi/180
 ovro_elev = 1222.0        # TODO: get from cnf
 
 
