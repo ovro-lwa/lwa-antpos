@@ -63,5 +63,3 @@ def correlator_to_antpol(correlator_number):
     location = correlator_number // 64
 
     return lwa_df[(lwa_df.snap2_location == location) & (lwa_df.pola_digitizer_channel == digitizer) | (lwa_df.polb_digitizer_channel == digitizer)]
-
-
