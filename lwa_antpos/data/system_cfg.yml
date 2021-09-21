@@ -14,7 +14,7 @@ LWA-213:
   snap2_group: 5
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
   fmc: 0
@@ -40,7 +40,7 @@ LWA-214:
   snap2_group: 5
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
   fmc: 0
@@ -66,7 +66,7 @@ LWA-215:
   snap2_group: 5
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
   fmc: 0
@@ -92,7 +92,7 @@ LWA-217:
   snap2_group: 5
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
   fmc: 0
@@ -118,7 +118,7 @@ LWA-218:
   snap2_group: 5
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
   fmc: 0
@@ -144,7 +144,7 @@ LWA-219:
   snap2_group: 5
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
   fmc: 0
@@ -170,7 +170,7 @@ LWA-223:
   snap2_group: 5
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
   fmc: 0
@@ -196,7 +196,7 @@ LWA-224:
   snap2_group: 6
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
   fmc: 0
@@ -222,7 +222,7 @@ LWA-225:
   snap2_group: 3
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
   fmc: 0
@@ -248,7 +248,7 @@ LWA-226:
   snap2_group: 4
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
   fmc: 0
@@ -274,7 +274,7 @@ LWA-227:
   snap2_group: 3
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
   fmc: 0
@@ -300,7 +300,7 @@ LWA-228:
   snap2_group: 4
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
   fmc: 0
@@ -326,7 +326,7 @@ LWA-229:
   snap2_group: 4
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
   fmc: 0
@@ -352,7 +352,7 @@ LWA-230:
   snap2_group: -1
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
   fmc: 0
@@ -378,7 +378,7 @@ LWA-231:
   snap2_group: 4
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: sanp01.sas.pvt
   snap2_mac: ""
   fmc: 0
@@ -404,7 +404,7 @@ LWA-232:
   snap2_group: 4
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
   fmc: 0
