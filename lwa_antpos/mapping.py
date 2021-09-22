@@ -3,6 +3,9 @@ import numpy as np
 
 from . import lwa_df
 
+isodd = lambda a: bool(a % 2)
+
+
 def filter_df(columnname, value):
     """ Gets full DataFrame and filters by columnname == value.
     Returns new DataFrame
@@ -39,11 +42,13 @@ def ant_to_snap2loc(antname):
     return (lwa_df.loc[antname]['snap2_chassis'], lwa_df.loc[antname]['snap2_location'])
 
 
-def digitizer_to_ants(digitizer, pol):
+def digitizer_to_ants(digitizer):
     """ Given digitizer channel and pol, return a list of ant names.
     """
 
-    return filter_df(f'pol{pol.lower()}_digitizer_channel', digitizer).index
+    pol = 'b' if isodd(digitizer) else 'a'  # digitizer alternates pols
+
+    return filter_df(f'pol{pol}_digitizer_channel', digitizer).index
 
 
 def antpol_to_correlator(antname, polname):
