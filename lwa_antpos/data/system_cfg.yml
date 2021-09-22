@@ -14,10 +14,10 @@ LWA-213:
   snap2_group: 5
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
+  fmc: 0
   pola_digitizer_channel: 2
   polb_digitizer_channel: 3
   arx_location: 43
@@ -40,10 +40,10 @@ LWA-214:
   snap2_group: 5
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
+  fmc: 0
   pola_digitizer_channel: 4
   polb_digitizer_channel: 5
   arx_location: 43
@@ -66,10 +66,10 @@ LWA-215:
   snap2_group: 5
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
+  fmc: 0
   pola_digitizer_channel: 6
   polb_digitizer_channel: 7
   arx_location: 43
@@ -92,10 +92,10 @@ LWA-217:
   snap2_group: 5
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
+  fmc: 0
   pola_digitizer_channel: 8
   polb_digitizer_channel: 9
   arx_location: 43
@@ -118,10 +118,10 @@ LWA-218:
   snap2_group: 5
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
+  fmc: 0
   pola_digitizer_channel: 10
   polb_digitizer_channel: 11
   arx_location: 43
@@ -144,10 +144,10 @@ LWA-219:
   snap2_group: 5
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
+  fmc: 0
   pola_digitizer_channel: 12
   polb_digitizer_channel: 13
   arx_location: 43
@@ -170,10 +170,10 @@ LWA-223:
   snap2_group: 5
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
+  fmc: 0
   pola_digitizer_channel: 14
   polb_digitizer_channel: 15
   arx_location: 43
@@ -196,10 +196,10 @@ LWA-224:
   snap2_group: 6
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
+  fmc: 0
   pola_digitizer_channel: 0
   polb_digitizer_channel: 1
   arx_location: 43
@@ -222,10 +222,10 @@ LWA-225:
   snap2_group: 3
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
+  fmc: 0
   pola_digitizer_channel: 16
   polb_digitizer_channel: 17
   arx_location: 40
@@ -248,10 +248,10 @@ LWA-226:
   snap2_group: 4
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
+  fmc: 0
   pola_digitizer_channel: 18
   polb_digitizer_channel: 19
   arx_location: 40
@@ -274,10 +274,10 @@ LWA-227:
   snap2_group: 3
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
+  fmc: 0
   pola_digitizer_channel: 20
   polb_digitizer_channel: 21
   arx_location: 40
@@ -300,10 +300,10 @@ LWA-228:
   snap2_group: 4
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
+  fmc: 0
   pola_digitizer_channel: 22
   polb_digitizer_channel: 23
   arx_location: 40
@@ -326,10 +326,10 @@ LWA-229:
   snap2_group: 4
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
+  fmc: 0
   pola_digitizer_channel: 24
   polb_digitizer_channel: 25
   arx_location: 40
@@ -352,10 +352,10 @@ LWA-230:
   snap2_group: -1
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
+  fmc: 0
   pola_digitizer_channel: 26
   polb_digitizer_channel: 27
   arx_location: 40
@@ -378,10 +378,10 @@ LWA-231:
   snap2_group: 4
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: sanp01.sas.pvt
   snap2_mac: ""
-  fmc: -1
+  fmc: 0
   pola_digitizer_channel: 28
   polb_digitizer_channel: 29
   arx_location: 40
@@ -404,10 +404,10 @@ LWA-232:
   snap2_group: 4
   snap2_serial: 13
   snap2_chassis: 2
-  snap2_location: 11
+  snap2_location: 1
   snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
+  fmc: 0
   pola_digitizer_channel: 30
   polb_digitizer_channel: 31
   arx_location: 40
@@ -431,11 +431,11 @@ LWA-233:
   snap2_serial: 3
   snap2_chassis: 2
   snap2_location: 10
-  snap2_hostname: snap03.sas.pvt
+  snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
-  pola_digitizer_channel: 0
-  polb_digitizer_channel: 1
+  fmc: 1
+  pola_digitizer_channel: 32
+  polb_digitizer_channel: 33
   arx_location: 41
   arx_serial: -1
   arx_address: 27
@@ -457,11 +457,11 @@ LWA-234:
   snap2_serial: 3
   snap2_chassis: 2
   snap2_location: 10
-  snap2_hostname: snap03.sas.pvt
+  snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
-  pola_digitizer_channel: 2
-  polb_digitizer_channel: 3
+  fmc: 1
+  pola_digitizer_channel: 34
+  polb_digitizer_channel: 35
   arx_location: 41
   arx_serial: -1
   arx_address: 27
@@ -483,11 +483,11 @@ LWA-235:
   snap2_serial: 3
   snap2_chassis: 2
   snap2_location: 10
-  snap2_hostname: snap03.sas.pvt
+  snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
-  pola_digitizer_channel: 4
-  polb_digitizer_channel: 5
+  fmc: 1
+  pola_digitizer_channel: 36
+  polb_digitizer_channel: 37
   arx_location: 41
   arx_serial: -1
   arx_address: 27
@@ -509,11 +509,11 @@ LWA-236:
   snap2_serial: 3
   snap2_chassis: 2
   snap2_location: 10
-  snap2_hostname: snap03.sas.pvt
+  snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
-  pola_digitizer_channel: 6
-  polb_digitizer_channel: 7
+  fmc: 1
+  pola_digitizer_channel: 38
+  polb_digitizer_channel: 39
   arx_location: 41
   arx_serial: -1
   arx_address: 27
@@ -535,11 +535,11 @@ LWA-237:
   snap2_serial: 3
   snap2_chassis: 2
   snap2_location: 10
-  snap2_hostname: snap03.sas.pvt
+  snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
-  pola_digitizer_channel: 8
-  polb_digitizer_channel: 9
+  fmc: 1
+  pola_digitizer_channel: 40
+  polb_digitizer_channel: 41
   arx_location: 41
   arx_serial: -1
   arx_address: 27
@@ -561,11 +561,11 @@ LWA-238:
   snap2_serial: 3
   snap2_chassis: 2
   snap2_location: 10
-  snap2_hostname: snap03.sas.pvt
+  snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
-  pola_digitizer_channel: 10
-  polb_digitizer_channel: 11
+  fmc: 1
+  pola_digitizer_channel: 42
+  polb_digitizer_channel: 43
   arx_location: 41
   arx_serial: -1
   arx_address: 27
@@ -587,11 +587,11 @@ LWA-239:
   snap2_serial: 3
   snap2_chassis: 2
   snap2_location: 10
-  snap2_hostname: snap03.sas.pvt
+  snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
-  pola_digitizer_channel: 12
-  polb_digitizer_channel: 13
+  fmc: 1
+  pola_digitizer_channel: 44
+  polb_digitizer_channel: 45
   arx_location: 41
   arx_serial: -1
   arx_address: 27
@@ -613,11 +613,11 @@ LWA-240:
   snap2_serial: 3
   snap2_chassis: 2
   snap2_location: 10
-  snap2_hostname: snap03.sas.pvt
+  snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
-  pola_digitizer_channel: 14
-  polb_digitizer_channel: 15
+  fmc: 1
+  pola_digitizer_channel: 46
+  polb_digitizer_channel: 47
   arx_location: 41
   arx_serial: -1
   arx_address: 27
@@ -639,11 +639,11 @@ LWA-241:
   snap2_serial: 3
   snap2_chassis: 2
   snap2_location: 10
-  snap2_hostname: snap03.sas.pvt
+  snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
-  pola_digitizer_channel: 16
-  polb_digitizer_channel: 17
+  fmc: 1
+  pola_digitizer_channel: 48
+  polb_digitizer_channel: 49
   arx_location: 44
   arx_serial: -1
   arx_address: 31
@@ -665,11 +665,11 @@ LWA-242:
   snap2_serial: 3
   snap2_chassis: 2
   snap2_location: 10
-  snap2_hostname: snap03.sas.pvt
+  snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
-  pola_digitizer_channel: 18
-  polb_digitizer_channel: 19
+  fmc: 1
+  pola_digitizer_channel: 50
+  polb_digitizer_channel: 51
   arx_location: 44
   arx_serial: -1
   arx_address: 31
@@ -691,11 +691,11 @@ LWA-243:
   snap2_serial: 3
   snap2_chassis: 2
   snap2_location: 10
-  snap2_hostname: snap03.sas.pvt
+  snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
-  pola_digitizer_channel: 20
-  polb_digitizer_channel: 21
+  fmc: 1
+  pola_digitizer_channel: 52
+  polb_digitizer_channel: 53
   arx_location: 44
   arx_serial: -1
   arx_address: 31
@@ -717,11 +717,11 @@ LWA-244:
   snap2_serial: 3
   snap2_chassis: 2
   snap2_location: 10
-  snap2_hostname: snap03.sas.pvt
+  snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
-  pola_digitizer_channel: 22
-  polb_digitizer_channel: 23
+  fmc: 1
+  pola_digitizer_channel: 54
+  polb_digitizer_channel: 55
   arx_location: 44
   arx_serial: -1
   arx_address: 31
@@ -743,11 +743,11 @@ LWA-245:
   snap2_serial: 3
   snap2_chassis: 2
   snap2_location: 10
-  snap2_hostname: snap03.sas.pvt
+  snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
-  pola_digitizer_channel: 24
-  polb_digitizer_channel: 25
+  fmc: 1
+  pola_digitizer_channel: 56
+  polb_digitizer_channel: 57
   arx_location: 44
   arx_serial: -1
   arx_address: 31
@@ -769,11 +769,11 @@ LWA-246:
   snap2_serial: 3
   snap2_chassis: 2
   snap2_location: 10
-  snap2_hostname: snap03.sas.pvt
+  snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
-  pola_digitizer_channel: 26
-  polb_digitizer_channel: 27
+  fmc: 1
+  pola_digitizer_channel: 58
+  polb_digitizer_channel: 59
   arx_location: 44
   arx_serial: -1
   arx_address: 31
@@ -795,11 +795,11 @@ LWA-247:
   snap2_serial: 3
   snap2_chassis: 2
   snap2_location: 10
-  snap2_hostname: snap03.sas.pvt
+  snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
-  pola_digitizer_channel: 28
-  polb_digitizer_channel: 29
+  fmc: 1
+  pola_digitizer_channel: 60
+  polb_digitizer_channel: 61
   arx_location: 44
   arx_serial: -1
   arx_address: 31
@@ -821,11 +821,11 @@ LWA-248:
   snap2_serial: 3
   snap2_chassis: 2
   snap2_location: 10
-  snap2_hostname: snap03.sas.pvt
+  snap2_hostname: snap01.sas.pvt
   snap2_mac: ""
-  fmc: -1
-  pola_digitizer_channel: 30
-  polb_digitizer_channel: 31
+  fmc: 1
+  pola_digitizer_channel: 62
+  polb_digitizer_channel: 63
   arx_location: 44
   arx_serial: -1
   arx_address: 31

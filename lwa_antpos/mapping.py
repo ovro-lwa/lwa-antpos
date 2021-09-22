@@ -32,7 +32,7 @@ def antpol_to_digitizer(antname, polname):
     return lwa_df.loc[antname][f'pol{polname.lower()}_digitizer_channel']
 
 
-def ant_to_snap2(antname):
+def ant_to_snap2loc(antname):
     """ Given antname, return snap2 (chassis, location) as tuple
     """
 
@@ -50,7 +50,7 @@ def antpol_to_correlator(antname, polname):
     """ Given antname and polname, return correlator number
     """
 
-    chassis, location = ant_to_snap2(antname)
+    chassis, location = ant_to_snap2loc(antname)
     digitizer = antpol_to_digitizer(antname, polname)
     return 64*(location-1) + digitizer
 
@@ -60,6 +60,6 @@ def correlator_to_antpol(correlator_number):
     """
 
     digitizer = correlator_number % 64
-    location = correlator_number // 64
+    location = correlator_number // 64 + 1
 
     return lwa_df[(lwa_df.snap2_location == location) & (lwa_df.pola_digitizer_channel == digitizer) | (lwa_df.polb_digitizer_channel == digitizer)]
