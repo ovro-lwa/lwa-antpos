@@ -32,7 +32,8 @@ def antpol_to_digitizer(antname, polname):
     """ Given antname and polname, return digitizer channel
     """
 
-    return lwa_df.loc[antname][f'pol{polname.lower()}_digitizer_channel']
+    start = 32*lwa_df.loc[antname]['fmc']
+    return start + lwa_df.loc[antname][f'pol{polname.lower()}_digitizer_channel']
 
 
 def ant_to_snap2loc(antname):

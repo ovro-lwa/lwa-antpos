@@ -12,7 +12,7 @@ def read_antpos_xlsx(filename=antposfile):
     """ Gets data from xlsx file and returns dataframe
     """
 
-    df = pd.read_excel(filename, engine='openpyxl', header=1)
+    df = pd.read_excel(filename, engine='openpyxl', header=1, usecols=lambda x: 'Unnamed' not in x)
     df.drop(index=0, inplace=True)  # descriptive header should be dropped
     df.drop(columns='dict_key', inplace=True)  # descriptive column should be dropped
     assert "antname" in df.columns
