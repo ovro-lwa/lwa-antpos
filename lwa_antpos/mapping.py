@@ -48,8 +48,9 @@ def digitizer_to_ants(digitizer):
     """
 
     pol = 'b' if isodd(digitizer) else 'a'  # digitizer alternates pols
+    start = 32*lwa_df.loc[antname]['fmc']
 
-    return filter_df(f'pol{pol}_digitizer_channel', digitizer).index.to_list()
+    return filter_df(f'pol{pol}_digitizer_channel', digitizer-start).index.to_list()
 
 
 def antpol_to_correlator(antname, polname):
