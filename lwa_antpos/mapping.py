@@ -43,14 +43,20 @@ def ant_to_snap2loc(antname):
     return (lwa_df.loc[antname]['snap2_chassis'], lwa_df.loc[antname]['snap2_location'])
 
 
-def digitizer_to_ants(digitizer):
+def digitizer_to_antpol(digitizer):
     """ Given digitizer channel and pol, return a list of ant names.
     """
 
     pol = 'b' if isodd(digitizer) else 'a'  # digitizer alternates pols
-    start = 32*lwa_df.loc[antname]['fmc']
+    start = 32*lwa_df['fmc']
+    remapped = start + lwa_df[f'pol{pol}_digitizer_channel']
 
-    return filter_df(f'pol{pol}_digitizer_channel', digitizer-start).index.to_list()
+    sel = np.where(remapped == digitizer)
+    if len(sel) != 1:
+        print(f'Did not find exactly one antpol for digitizer {digitizer}')
+        return lwa_df.iloc[sel].index.to_list()
+    else:
+        return lwa_df.iloc[sel].index.to_list()[0] + pol.upper()
 
 
 def antpol_to_correlator(antname, polname):
