@@ -32,8 +32,9 @@ def antpol_to_digitizer(antname, polname):
     """ Given antname and polname, return digitizer channel
     """
 
-    start = 32*lwa_df.loc[antname]['fmc']
-    return start + lwa_df.loc[antname][f'pol{polname.lower()}_digitizer_channel']
+#    start = 32*lwa_df.loc[antname]['fmc']
+#    return start + lwa_df.loc[antname][f'pol{polname.lower()}_digitizer_channel']
+    return lwa_df.loc[antname][f'pol{polname.lower()}_digitizer_channel']
 
 
 def ant_to_snap2loc(antname):
@@ -48,8 +49,9 @@ def digitizer_to_antpol(digitizer):
     """
 
     pol = 'b' if isodd(digitizer) else 'a'  # digitizer alternates pols
-    start = 32*lwa_df['fmc']
-    remapped = start + lwa_df[f'pol{pol}_digitizer_channel']
+#    start = 32*lwa_df['fmc']
+#    remapped = start + lwa_df[f'pol{pol}_digitizer_channel']
+    remapped = lwa_df[f'pol{pol}_digitizer_channel']
 
     sel = np.where(remapped == digitizer)
     if len(sel) != 1:
