@@ -3,7 +3,7 @@ import json
 import pandas as pd
 import etcd3
 from pkg_resources import resource_filename
-
+from mnc.common import ETCD_HOST, ETCD_PORT
 antposfile = resource_filename("lwa_antpos", "data/LWA-352 Antenna Status & System Configuration.xlsx")
 # "data/LWA-352 Antenna Positions & System Status.xlsx"  # old name
 
@@ -21,7 +21,7 @@ def read_antpos_xlsx(filename=antposfile):
     return df
 
 
-def read_antpos_etcd(host='10.42.0.64', port=2379):
+def read_antpos_etcd(host=ETCD_HOST, port=ETCD_PORT):
     """ Gets data from etcd and returns dataframe
     """
 
