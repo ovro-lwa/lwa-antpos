@@ -13,8 +13,8 @@ except:
     lwa_df = reading.read_antpos_xlsx()
     print('Read antpos from xlsx file in repo')
 
-if 'used' in lwa_df.columns:
-    antnames = lwa_df[lwa_df.used == 'YES'].index
+if 'online' in lwa_df.columns:
+    antnames = lwa_df[lwa_df.online == 'YES'].index
 else:
     antnames = lwa_df.index
 
