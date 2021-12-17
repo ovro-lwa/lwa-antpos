@@ -68,7 +68,7 @@ def antpol_to_correlator(antname, polname):
     chassis, location = ant_to_snap2loc(antname)
     digitizer = antpol_to_digitizer(antname, polname)
     return 64*(location-1) + digitizer
-
+    # or 32*(SNAP# - 1) + FPGA_input_number_pol_A / 2?
 
 def correlator_to_antpol(correlator_number):
     """ Get ant/pol for a given correlator_number.
