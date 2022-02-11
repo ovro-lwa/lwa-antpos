@@ -49,16 +49,16 @@ def digitizer_to_antpol(digitizer):
     """
 
     pol = 'b' if isodd(digitizer) else 'a'  # digitizer alternates pols
-#    start = 32*lwa_df['fmc']
-#    remapped = start + lwa_df[f'pol{pol}_digitizer_channel']
-    remapped = lwa_df[f'pol{pol}_digitizer_channel']
+    start = 32*lwa_df['fmc']
+    remapped = start + lwa_df[f'pol{pol}_digitizer_channel']
+#    remapped = lwa_df[f'pol{pol}_digitizer_channel']
 
-    sel = np.where(remapped == digitizer)
+    sel = np.where(remapped == digitizer)[0]
     if len(sel) != 1:
         print(f'Did not find exactly one antpol for digitizer {digitizer}')
         return lwa_df.iloc[sel].index.to_list()
     else:
-        return lwa_df.iloc[sel].index.to_list()[0] + pol.upper()
+        return lwa_df.iloc[sel].index.to_list() + pol.upper()
 
 
 def antpol_to_correlator(antname, polname):
