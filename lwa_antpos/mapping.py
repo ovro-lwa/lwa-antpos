@@ -22,19 +22,20 @@ def get_unique(df, columnname):
 
 
 def antpol_to_arx(antname, polname):
-    """ Given antname and polname, return arx channel
+    """ Given antname and polname, return arx (address, channel) tuple
     """
 
-    return lwa_df.loc[antname][f'pol{polname.lower()}_arx_channel']
+    return tuple(lwa_df.loc[antname][['arx_address', f'pol{polname.lower()}_arx_channel']].to_list())
 
 
 def antpol_to_digitizer(antname, polname):
-    """ Given antname and polname, return digitizer channel
+    """ Given antname and polname, return (snap2loc, digitizer) tuple.
+    Digitizer is remapped to 0-63 (fmc=0 => 0-31, fmc=1 => 32-63).
     """
 
-#    start = 32*lwa_df.loc[antname]['fmc']
-#    return start + lwa_df.loc[antname][f'pol{polname.lower()}_digitizer_channel']
-    return lwa_df.loc[antname][f'pol{polname.lower()}_digitizer_channel']
+    start = 32*lwa_df.loc[antname]['fmc']
+    snap2loc, dig0 = lwa_df.loc[antname][['snap2_location', f'pol{polname.lower()}_digitizer_channel']].to_list()
+    return snap2loc, start + dig0
 
 
 def ant_to_snap2loc(antname):
@@ -44,8 +45,8 @@ def ant_to_snap2loc(antname):
     return (lwa_df.loc[antname]['snap2_chassis'], lwa_df.loc[antname]['snap2_location'])
 
 
-def digitizer_to_antpol(digitizer):
-    """ Given digitizer channel and pol, return a list of ant names.
+def snap2digitizer_to_antpol(snap2loc, digitizer):
+    """ Given snap2loc and digitizer channel, return ant name.
     """
 
     pol = 'b' if isodd(digitizer) else 'a'  # digitizer alternates pols
@@ -53,28 +54,28 @@ def digitizer_to_antpol(digitizer):
     remapped = start + lwa_df[f'pol{pol}_digitizer_channel']
 #    remapped = lwa_df[f'pol{pol}_digitizer_channel']
 
-    sel = np.where(remapped == digitizer)[0]
+    sel = np.where((remapped == digitizer) & (lwa_df['snap2_location'] == snap2loc))[0]
     if len(sel) != 1:
         print(f'Did not find exactly one antpol for digitizer {digitizer}')
         return lwa_df.iloc[sel].index.to_list()
     else:
-        return lwa_df.iloc[sel].index.to_list() + pol.upper()
+        return lwa_df.iloc[sel].index.to_list()[0] + pol.upper()
 
 
-def antpol_to_correlator(antname, polname):
-    """ Given antname and polname, return correlator number
+def antname_to_correlator(antname):
+    """ Given antname, return correlator number
     """
 
-    chassis, location = ant_to_snap2loc(antname)
-    digitizer = antpol_to_digitizer(antname, polname)
-    return 64*(location-1) + digitizer
-    # or 32*(SNAP# - 1) + FPGA_input_number_pol_A / 2?
+    return lwa_df.loc[antname]['corr_num']
 
-def correlator_to_antpol(correlator_number):
-    """ Get ant/pol for a given correlator_number.
+
+def correlator_to_antpol(corr_num):
+    """ Given correlator number, return antname.
     """
 
-    digitizer = correlator_number % 64
-    location = correlator_number // 64 + 1
-
-    return lwa_df[(lwa_df.snap2_location == location) & (lwa_df.pola_digitizer_channel == digitizer) | (lwa_df.polb_digitizer_channel == digitizer)]
+    antlist = filter_df('corr_num', 1).index.to_list()
+    if len(antlist) == 1:
+        return antlist[0]
+    else:
+        print(f'Did not find exactly one ant')
+        return antlist
