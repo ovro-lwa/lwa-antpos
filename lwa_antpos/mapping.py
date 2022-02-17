@@ -38,6 +38,14 @@ def antpol_to_digitizer(antname, polname):
     return snap2loc, start + dig0
 
 
+def antpol_to_fpga(antname, polname):
+    """ Given antname and polname, return (snap2loc, fpga input) tuple.
+    """
+
+    snap2loc, fpgainp = lwa_df.loc[antname][['snap2_location', f'pol{polname.lower()}_fpga_num']].to_list()
+    return snap2loc, fpgainp
+
+
 def ant_to_snap2loc(antname):
     """ Given antname, return snap2 (chassis, location) as tuple
     """
@@ -45,18 +53,17 @@ def ant_to_snap2loc(antname):
     return (lwa_df.loc[antname]['snap2_chassis'], lwa_df.loc[antname]['snap2_location'])
 
 
-def snap2digitizer_to_antpol(snap2loc, digitizer):
-    """ Given snap2loc and digitizer channel, return ant name.
+def snap2_to_antpol(snap2loc, inp):
+    """ Given snap2loc and input number, return ant name.
     """
 
-    pol = 'b' if isodd(digitizer) else 'a'  # digitizer alternates pols
-    start = 32*lwa_df['fmc']
-    remapped = start + lwa_df[f'pol{pol}_digitizer_channel']
+    pol = 'b' if isodd(inp) else 'a'  # input alternates pols
+#    start = 32*lwa_df['fmc']
+#    remapped = start + lwa_df[f'pol{pol}_digitizer_channel']
 #    remapped = lwa_df[f'pol{pol}_digitizer_channel']
-
-    sel = np.where((remapped == digitizer) & (lwa_df['snap2_location'] == snap2loc))[0]
+    sel = np.where((inp == lwa_df['fpol{pol}_fpga_num']) & (lwa_df['snap2_location'] == snap2loc))[0]
     if len(sel) != 1:
-        print(f'Did not find exactly one antpol for digitizer {digitizer}')
+        print(f'Did not find exactly one antpol for input {inp}')
         return lwa_df.iloc[sel].index.to_list()
     else:
         return lwa_df.iloc[sel].index.to_list()[0] + pol.upper()
