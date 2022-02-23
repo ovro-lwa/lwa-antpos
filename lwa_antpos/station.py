@@ -194,8 +194,8 @@ def parse_config(etcdserver=None, filename=None):
                     ant = Antenna.from_line(line)
                     st.append(ant)
     else:
-        df_ant = DataFrame.from_dict(lwa_cnf.get('ant'), orient='index')
-        st = Station.from_df(df_ant)
+#        df_ant = DataFrame.from_dict(lwa_cnf.get('ant'), orient='index')
+        st = Station.from_df(lwa_df)
                 
     return st
 
