@@ -61,7 +61,7 @@ def snap2_to_antpol(snap2loc, inp):
 #    start = 32*lwa_df['fmc']
 #    remapped = start + lwa_df[f'pol{pol}_digitizer_channel']
 #    remapped = lwa_df[f'pol{pol}_digitizer_channel']
-    sel = np.where((inp == lwa_df['fpol{pol}_fpga_num']) & (lwa_df['snap2_location'] == snap2loc))[0]
+    sel = np.where((inp == lwa_df[f'pol{pol}_fpga_num']) & (lwa_df['snap2_location'] == snap2loc))[0]
     if len(sel) != 1:
         print(f'Did not find exactly one antpol for input {inp}')
         return lwa_df.iloc[sel].index.to_list()
