@@ -1,6 +1,9 @@
-__all__ = ['reading', 'station', 'lwa_cnf', 'lwa_df', 'antnames']
+__all__ = ['reading', 'station', 'lwa_cnf', 'lwa_df', 'antnames', 'mapping']
 
-import dsautils.cnf as cnf
+try:
+    import dsautils.cnf as cnf
+except ModuleNotFoundError:
+    print('dsautils.cnf not found. skipping...')
 from pkg_resources import resource_filename
 from . import reading
 
@@ -22,4 +25,8 @@ dds = {'ant': {}}
 for ind in antnames:
     dd = lwa_df.loc[ind]
     dds['ant'][ind] = dd
-lwa_cnf = cnf.Conf(data=dds, cnf_conf=CNFCONF)
+
+try:
+    lwa_cnf = cnf.Conf(data=dds, cnf_conf=CNFCONF)
+except NameError:
+    pass
