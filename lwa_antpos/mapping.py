@@ -35,7 +35,7 @@ def antpol_to_digitizer(antname, polname):
 
     start = 32*lwa_df.loc[antname]['fmc']
     snap2loc, dig0 = lwa_df.loc[antname][['snap2_location', f'pol{polname.lower()}_digitizer_channel']].to_list()
-    return snap2loc, start + dig0
+    return int(snap2loc), int(start + dig0)
 
 
 def antpol_to_fpga(antname, polname):
@@ -43,7 +43,7 @@ def antpol_to_fpga(antname, polname):
     """
 
     snap2loc, fpgainp = lwa_df.loc[antname][['snap2_location', f'pol{polname.lower()}_fpga_num']].to_list()
-    return snap2loc, fpgainp
+    return int(snap2loc), int(fpgainp)
 
 
 def ant_to_snap2loc(antname):
@@ -73,7 +73,7 @@ def antname_to_correlator(antname):
     """ Given antname, return correlator number
     """
 
-    return lwa_df.loc[antname]['corr_num']
+    return int(lwa_df.loc[antname]['corr_num'])
 
 
 def correlator_to_antpol(corr_num):
@@ -82,7 +82,7 @@ def correlator_to_antpol(corr_num):
 
     antlist = filter_df('corr_num', 1).index.to_list()
     if len(antlist) == 1:
-        return antlist[0]
+        return int(antlist[0])
     else:
         print(f'Did not find exactly one ant')
-        return antlist
+        return list(antlist)
