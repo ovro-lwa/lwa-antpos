@@ -57,6 +57,9 @@ def snap2_to_antpol(snap2loc, inp):
     """ Given snap2loc and input number, return ant name.
     """
 
+    if isinstance(snap2loc, str):
+        snap2loc = int(snap2loc.lstrip('snap'))
+
     pol = 'b' if isodd(inp) else 'a'  # input alternates pols
 #    start = 32*lwa_df['fmc']
 #    remapped = start + lwa_df[f'pol{pol}_digitizer_channel']
