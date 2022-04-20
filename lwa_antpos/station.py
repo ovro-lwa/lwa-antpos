@@ -58,8 +58,8 @@ class Station(object):
         # TODO: Use OVRO_MMA as the telescope name until CASA knows about OVRO-LWA
         st = cls('OVRO_MMA', ovro_lat, ovro_lon, ovro_elev)
 
-        for antname in antnames:
-            row = df.loc[antname]
+        for corr_num in range(352):
+            row = df[df.corr_num == corr_num].iloc[0]
             ant = Antenna.from_df(row)
             st.append(ant)
 
@@ -234,8 +234,7 @@ def parse_config(etcdserver=None, filename=None):
                     ant = Antenna.from_line(line)
                     st.append(ant)
     else:
-        connected = lwa_df[lwa_df.pola_fpga_num != -1]
-        st = Station.from_df(connected)
+        st = Station.from_df(lwa_df)
         
     return st
 
