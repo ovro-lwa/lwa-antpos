@@ -55,7 +55,8 @@ class Station(object):
 
     @classmethod
     def from_df(cls, df):
-        st = cls('ovro', ovro_lat, ovro_lon, ovro_elev)
+        # TODO: Use OVRO_MMA as the telescope name until CASA knows about OVRO-LWA
+        st = cls('OVRO_MMA', ovro_lat, ovro_lon, ovro_elev)
 
         for antname in antnames:
             row = df.loc[antname]
