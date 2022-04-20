@@ -160,7 +160,9 @@ class Antenna(object):
         """
         lat = float(row.latitude) * numpy.pi/180
         lon = float(row.longitude) * numpy.pi/180
-        elev = 1222.0        # Is this right?
+        elev = float(row.elevation)
+        if elev > 999990:
+            elev = 1222.0
         return cls(row.name, lat, lon, elev)
         
     @classmethod
@@ -172,6 +174,7 @@ class Antenna(object):
         name, lat, lon, x, y, active = line.split(None, 5)
         lat = float(lat) * numpy.pi/180
         lon = float(lon) * numpy.pi/180
+        elev = 1222.0   # TODO: This will need to come from somewhere
         return cls(name, lat, lon, elev)
         
     @property
