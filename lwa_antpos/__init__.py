@@ -14,7 +14,7 @@ except:
     print('Read antpos from xlsx file in repo')
 
 if 'online' in lwa_df.columns:
-    antnames = lwa_df[lwa_df.online in (True, 'YES')].index
+    antnames = lwa_df[lwa_df.online == True].index
 else:
     antnames = lwa_df.index
 
