@@ -213,7 +213,8 @@ def parse_config(etcdserver=None, filename=None):
     Can optionally get data from etcd server or static file.
     """
 
-    st = Station('ovro')
+    # Use OVRO_MMA as the telescope name until CASA knows about OVRO-LWA
+    st = Station('OVRO_MMA')
 
     if etcdserver is not None:
         pass
