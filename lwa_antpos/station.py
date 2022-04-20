@@ -233,9 +233,9 @@ def parse_config(etcdserver=None, filename=None):
                     ant = Antenna.from_line(line)
                     st.append(ant)
     else:
-        df_ant = DataFrame.from_dict(lwa_cnf.get('ant'), orient='index')
-        st = Station.from_df(df_ant)
-                
+        connected = lwa_df[lwa_df.pola_fpga_num != -1]
+        st = Station.from_df(connected)
+        
     return st
 
 
