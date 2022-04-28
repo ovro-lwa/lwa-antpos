@@ -235,7 +235,7 @@ def parse_config(etcdserver=None, filename=None):
                     st.append(ant)
     else:
         st = Station.from_df(lwa_df)
-        
+
     return st
 
 

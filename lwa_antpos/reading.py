@@ -1,7 +1,10 @@
 import yaml
 import json
 import pandas as pd
-import etcd3
+try:
+    import etcd3
+except ModuleNotFoundError:
+    print('no etcd3 found. skipping...')
 from pkg_resources import resource_filename
 from mnc.common import ETCD_HOST, ETCD_PORT
 antposfile = resource_filename("lwa_antpos", "data/LWA-352 Antenna Status & System Configuration.xlsx")
