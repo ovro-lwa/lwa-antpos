@@ -36,7 +36,7 @@ Mapping antenna name to ARX, SNAP2, etc:
 ```
 > from lwa_antpos import mapping
 Read antpos from xlsx file in repo
-> mapping.ant_to_snap2('LWA-300')
+> mapping.ant_to_snap2loc('LWA-300')
 (2, 11)
 > mapping.antpol_to_arx('LWA-235', 'a')
 ```
