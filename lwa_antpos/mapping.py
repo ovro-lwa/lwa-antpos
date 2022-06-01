@@ -79,13 +79,13 @@ def antname_to_correlator(antname):
     return int(lwa_df.loc[antname]['corr_num'])
 
 
-def correlator_to_antpol(corr_num):
+def correlator_to_antname(corr_num):
     """ Given correlator number, return antname.
     """
 
     antlist = filter_df('corr_num', corr_num).index.to_list()
     if len(antlist) == 1:
-        return int(antlist[0])
+        return antlist[0]
     else:
         print(f'Did not find exactly one ant')
         return list(antlist)
