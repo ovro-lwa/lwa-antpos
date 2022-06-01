@@ -83,7 +83,7 @@ def correlator_to_antpol(corr_num):
     """ Given correlator number, return antname.
     """
 
-    antlist = filter_df('corr_num', 1).index.to_list()
+    antlist = filter_df('corr_num', corr_num).index.to_list()
     if len(antlist) == 1:
         return int(antlist[0])
     else:
