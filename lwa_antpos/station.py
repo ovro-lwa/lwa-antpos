@@ -74,7 +74,7 @@ class Station(object):
         name, lat, lon, x, y, active = line.split(None, 5)
         lat = float(lat) * numpy.pi/180
         lon = float(lon) * numpy.pi/180
-        elev = 1222.0        # TODO: get from cnf
+        elev = ovro_elev        # TODO: get from cnf
         return cls(name, lat, lon, elev)
         
     def append(self, ant):
@@ -162,8 +162,9 @@ class Antenna(object):
         lat = float(row.latitude) * numpy.pi/180
         lon = float(row.longitude) * numpy.pi/180
         elev = float(row.elevation)
-        if elev > 999990:
-            elev = 1222.0
+        if np.isnan(elev) or elev > 999990:
+            elev = ovro_elev
+
         return cls(row.name, lat, lon, elev)
         
     @classmethod
@@ -175,7 +176,7 @@ class Antenna(object):
         name, lat, lon, x, y, active = line.split(None, 5)
         lat = float(lat) * numpy.pi/180
         lon = float(lon) * numpy.pi/180
-        elev = 1222.0   # TODO: This will need to come from somewhere
+        elev = ovro_elev   # TODO: This will need to come from somewhere
         return cls(name, lat, lon, elev)
         
     @property
