@@ -4,6 +4,7 @@ import copy
 import numpy
 import weakref
 
+from numpy import isnan
 from pandas import DataFrame
 from astropy.coordinates import EarthLocation
 import astropy.units as u
@@ -162,7 +163,7 @@ class Antenna(object):
         lat = float(row.latitude) * numpy.pi/180
         lon = float(row.longitude) * numpy.pi/180
         elev = float(row.elevation)
-        if np.isnan(elev) or elev > 999990:
+        if isnan(elev) or elev > 999990:
             elev = ovro_elev
 
         return cls(row.name, lat, lon, elev)
