@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>lwa-antpos documentation &#8212; lwa-antpos  documentation</title>
+    <title>OVRO-LWA lwa-antpos documentation &#8212; lwa-antpos  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
@@ -16,6 +16,7 @@
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="mapping api" href="api.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -32,72 +33,16 @@
 
           <div class="body" role="main">
             
-  <section id="lwa-antpos-documentation">
-<h1>lwa-antpos documentation<a class="headerlink" href="#lwa-antpos-documentation" title="Permalink to this heading">¶</a></h1>
+  <section id="ovro-lwa-lwa-antpos-documentation">
+<h1>OVRO-LWA lwa-antpos documentation<a class="headerlink" href="#ovro-lwa-lwa-antpos-documentation" title="Permalink to this heading">¶</a></h1>
+<p>lwa-antpos provides tools to read configuration information for the OVRO-LWA, including antenna positions…</p>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">mapping api</a></li>
+</ul>
 </div>
-<span class="target" id="module-lwa_antpos.mapping"></span><dl class="py function">
-<dt class="sig sig-object py" id="lwa_antpos.mapping.ant_to_snap2loc">
-<span class="sig-prename descclassname"><span class="pre">lwa_antpos.mapping.</span></span><span class="sig-name descname"><span class="pre">ant_to_snap2loc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">antname</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lwa_antpos/mapping.html#ant_to_snap2loc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lwa_antpos.mapping.ant_to_snap2loc" title="Permalink to this definition">¶</a></dt>
-<dd><p>Given antname, return snap2 (chassis, location) as tuple</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="lwa_antpos.mapping.antname_to_correlator">
-<span class="sig-prename descclassname"><span class="pre">lwa_antpos.mapping.</span></span><span class="sig-name descname"><span class="pre">antname_to_correlator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">antname</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lwa_antpos/mapping.html#antname_to_correlator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lwa_antpos.mapping.antname_to_correlator" title="Permalink to this definition">¶</a></dt>
-<dd><p>Given antname, return correlator number</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="lwa_antpos.mapping.antpol_to_arx">
-<span class="sig-prename descclassname"><span class="pre">lwa_antpos.mapping.</span></span><span class="sig-name descname"><span class="pre">antpol_to_arx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">antname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">polname</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lwa_antpos/mapping.html#antpol_to_arx"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lwa_antpos.mapping.antpol_to_arx" title="Permalink to this definition">¶</a></dt>
-<dd><p>Given antname and polname, return arx (address, channel) tuple</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="lwa_antpos.mapping.antpol_to_digitizer">
-<span class="sig-prename descclassname"><span class="pre">lwa_antpos.mapping.</span></span><span class="sig-name descname"><span class="pre">antpol_to_digitizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">antname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">polname</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lwa_antpos/mapping.html#antpol_to_digitizer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lwa_antpos.mapping.antpol_to_digitizer" title="Permalink to this definition">¶</a></dt>
-<dd><p>Given antname and polname, return (snap2loc, digitizer) tuple.
-Digitizer is remapped to 0-63 (fmc=0 =&gt; 0-31, fmc=1 =&gt; 32-63).</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="lwa_antpos.mapping.antpol_to_fpga">
-<span class="sig-prename descclassname"><span class="pre">lwa_antpos.mapping.</span></span><span class="sig-name descname"><span class="pre">antpol_to_fpga</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">antname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">polname</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lwa_antpos/mapping.html#antpol_to_fpga"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lwa_antpos.mapping.antpol_to_fpga" title="Permalink to this definition">¶</a></dt>
-<dd><p>Given antname and polname, return (snap2loc, fpga input) tuple.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="lwa_antpos.mapping.correlator_to_antpol">
-<span class="sig-prename descclassname"><span class="pre">lwa_antpos.mapping.</span></span><span class="sig-name descname"><span class="pre">correlator_to_antpol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">corr_num</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lwa_antpos/mapping.html#correlator_to_antpol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lwa_antpos.mapping.correlator_to_antpol" title="Permalink to this definition">¶</a></dt>
-<dd><p>Given correlator number, return antname.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="lwa_antpos.mapping.filter_df">
-<span class="sig-prename descclassname"><span class="pre">lwa_antpos.mapping.</span></span><span class="sig-name descname"><span class="pre">filter_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">columnname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lwa_antpos/mapping.html#filter_df"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lwa_antpos.mapping.filter_df" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets full DataFrame and filters by columnname == value.
-Returns new DataFrame</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="lwa_antpos.mapping.get_unique">
-<span class="sig-prename descclassname"><span class="pre">lwa_antpos.mapping.</span></span><span class="sig-name descname"><span class="pre">get_unique</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columnname</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lwa_antpos/mapping.html#get_unique"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lwa_antpos.mapping.get_unique" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return unique values for columnname in DataFrame</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="lwa_antpos.mapping.snap2_to_antpol">
-<span class="sig-prename descclassname"><span class="pre">lwa_antpos.mapping.</span></span><span class="sig-name descname"><span class="pre">snap2_to_antpol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">snap2loc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lwa_antpos/mapping.html#snap2_to_antpol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lwa_antpos.mapping.snap2_to_antpol" title="Permalink to this definition">¶</a></dt>
-<dd><p>Given snap2loc and input number, return ant name.</p>
-</dd></dl>
-
-</section>
-<section id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
 <li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
 </section>
@@ -119,11 +64,15 @@ Returns new DataFrame</p>
 
 
 <h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">mapping api</a></li>
+</ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="#">Documentation overview</a><ul>
+      <li>Next: <a href="api.html" title="next chapter">mapping api</a></li>
   </ul></li>
 </ul>
 </div>

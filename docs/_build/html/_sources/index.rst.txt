@@ -1,17 +1,12 @@
-lwa-antpos documentation
+OVRO-LWA lwa-antpos documentation
 ======================================
+
+lwa-antpos provides tools to read configuration information for the OVRO-LWA, including antenna positions...
 
 .. toctree::
    :maxdepth: 2
 
-   
-.. automodule:: lwa_antpos.mapping
-   :members:
+   api
 	       
-
-Indices and tables
-==================
-
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
