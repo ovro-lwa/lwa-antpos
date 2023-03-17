@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # setup
-NAME=lwa-antpos
+NAME="lwa-antpos"
 DATE=$(date --iso-8601=seconds)
-LOG=~/deploy_$NAME_$DATE.log
+LOG=~/deploy_${NAME}_${DATE}.log
 
 set -ex >> $LOG 2>>$LOG
 
@@ -12,7 +12,7 @@ echo $HOSTNAME >> $LOG 2>>$LOG  # should be installing on calim
 echo $PWD >> $LOG 2>>$LOG  # should be base of code repo
 whoami >> $LOG 2>>$LOG  # should be user pipeline (or ubuntu?)
 
-if [[ $PWD =~ $$NAME ]]; then
+if [[ $PWD =~ $NAME ]]; then
     if [[ $HOSTNAME =~ 'calim' ]]; then
 	echo "$DATE" >> $LOG 2>>$LOG
 	conda run -n datarecorder which python >> $LOG 2>>$LOG
