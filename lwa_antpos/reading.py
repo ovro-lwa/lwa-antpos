@@ -30,10 +30,10 @@ def read_antpos_etcd(host=ETCD_HOST, port=ETCD_PORT):
     """ Gets data from etcd and returns dataframe
     """
 
-    dds, _ = ls.get('/cfg/system') 
+    dds = ls.get_dict('/cfg/system') 
     dd = json.loads(dds.decode("utf-8"))['lwacfg']
-    
-    df = pd.DataFrame.from_dict(dd, orient='index')
+    df = pd.DataFrame.from_dict(dds['lwacfg'], orient='index')
+
     assert "antname" in df.columns
     df.set_index('antname', inplace=True)
 
