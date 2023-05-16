@@ -2,11 +2,13 @@ import yaml
 import json
 import pandas as pd
 try:
-    import etcd3
+    from dsautils import dsa_store
 except ModuleNotFoundError:
     print('no etcd3 found. skipping...')
 from pkg_resources import resource_filename
 from mnc.common import ETCD_HOST, ETCD_PORT
+
+ls = dsa_store.DsaStore()
 antposfile = resource_filename("lwa_antpos", "data/LWA-352 Antenna Status & System Configuration.xlsx")
 # "data/LWA-352 Antenna Positions & System Status.xlsx"  # old name
 
@@ -28,8 +30,7 @@ def read_antpos_etcd(host=ETCD_HOST, port=ETCD_PORT):
     """ Gets data from etcd and returns dataframe
     """
 
-    le = etcd3.client(host, port)
-    dds, _ = le.get('/cfg/system') 
+    dds, _ = ls.get('/cfg/system') 
     dd = json.loads(dds.decode("utf-8"))['lwacfg']
     
     df = pd.DataFrame.from_dict(dd, orient='index')
