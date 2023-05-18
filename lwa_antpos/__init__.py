@@ -13,20 +13,25 @@ try:
     lwa_df = reading.read_antpos_etcd()
     print('Read antpos from etcd')
 except:
-    lwa_df = reading.read_antpos_xlsx()
-    print('Read antpos from xlsx file in repo')
+    try:
+        lwa_df = reading.read_antpos_xlsx()
+        print('Read antpos from xlsx file in repo')
+    except:
+        lwa_df = None
+        print('Cannot reach either from etcd or xlsx file')
 
-if 'online' in lwa_df.columns:
-    antnames = lwa_df[lwa_df.online == 'YES'].index
-else:
-    antnames = lwa_df.index
+if lwa_df is not None:
+    if 'online' in lwa_df.columns:
+        antnames = lwa_df[lwa_df.online == 'YES'].index
+    else:
+        antnames = lwa_df.index
 
-dds = {'ant': {}}
-for ind in antnames:
-    dd = lwa_df.loc[ind]
-    dds['ant'][ind] = dd
+        dds = {'ant': {}}
+        for ind in antnames:
+            dd = lwa_df.loc[ind]
+            dds['ant'][ind] = dd
 
-try:
-    lwa_cnf = cnf.Conf(data=dds, cnf_conf=CNFCONF)
-except NameError:
-    pass
+    try:
+        lwa_cnf = cnf.Conf(data=dds, cnf_conf=CNFCONF)
+    except NameError:
+        pass

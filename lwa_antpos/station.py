@@ -9,14 +9,15 @@ from pandas import DataFrame
 from astropy.coordinates import EarthLocation
 import astropy.units as u
 
-from . import lwa_cnf, lwa_df, antnames
+from . import lwa_df, antnames
 
 __all__ = ['Station', 'Antenna', 'parse_config', 'ovro']
 
-center = lwa_df.loc['LWA-000']
-ovro_lat = float(center.latitude) * numpy.pi/180
-ovro_lon = float(center.longitude) * numpy.pi/180
-ovro_elev = 1222.0        # TODO: get from cnf
+if lwa_df is not None:
+    center = lwa_df.loc['LWA-000']
+    ovro_lat = float(center.latitude) * numpy.pi/180
+    ovro_lon = float(center.longitude) * numpy.pi/180
+    ovro_elev = 1222.0        # TODO: get from cnf
 
 
 def _smart_int(s, positive_only=False):
@@ -60,9 +61,10 @@ class Station(object):
         st = cls('OVRO_MMA', ovro_lat, ovro_lon, ovro_elev)
 
         for corr_num in range(352):
-            row = df[df.corr_num == corr_num].iloc[0]
-            ant = Antenna.from_df(row)
-            st.append(ant)
+            if corr_num in df.corr_num.values:
+                row = df[df.corr_num == corr_num].iloc[0]
+                ant = Antenna.from_df(row)
+                st.append(ant)
 
         return st
         
@@ -236,7 +238,10 @@ def parse_config(etcdserver=None, filename=None):
                     ant = Antenna.from_line(line)
                     st.append(ant)
     else:
-        st = Station.from_df(lwa_df)
+        if lwa_df is not None:
+            st = Station.from_df(lwa_df)
+        else:
+            st = None
 
     return st
 
