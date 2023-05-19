@@ -30,6 +30,7 @@ if lwa_df is not None:
         for ind in antnames:
             dd = lwa_df.loc[ind]
             dds['ant'][ind] = dd
+            assert dd.corr_num in range(352), "corr_num is assumed to be in range(352)"
 
     try:
         lwa_cnf = cnf.Conf(data=dds, cnf_conf=CNFCONF)
