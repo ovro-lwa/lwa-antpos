@@ -6,7 +6,6 @@ try:
 except ModuleNotFoundError:
     print('no etcd3 found. skipping...')
 from pkg_resources import resource_filename
-from mnc.common import ETCD_HOST, ETCD_PORT
 
 ls = dsa_store.DsaStore()
 antposfile = resource_filename("lwa_antpos", "data/LWA-352 Antenna Status & System Configuration.xlsx")
@@ -25,13 +24,25 @@ def read_antpos_xlsx(filename=antposfile):
 
     return df
 
+def update_antpos_etcd():
+    """ Read xlsx format file, restructure, and put in etcd.
+    """
 
-def read_antpos_etcd(host=ETCD_HOST, port=ETCD_PORT):
+    from astropy import time
+    from numpy import nan
+
+    df = read_antpos_xlsx()
+    df.reset_index(inplace=True)
+    df.replace(nan, '', inplace=True)
+    ls.put_dict('/cfg/system', {'lwacfg': df.to_dict(), 'mjd': time.Time.now().mjd})
+
+
+def read_antpos_etcd():
     """ Gets data from etcd and returns dataframe
     """
 
     dds = ls.get_dict('/cfg/system') 
-    df = pd.DataFrame.from_dict(dds['lwacfg'], orient='index')    
+    df = pd.DataFrame.from_dict(dds['lwacfg']) # , orient='index')    
 
     assert "antname" in df.columns
     df.set_index('antname', inplace=True)
