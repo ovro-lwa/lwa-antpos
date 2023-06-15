@@ -34,7 +34,7 @@ def update_antpos_etcd():
     df = read_antpos_xlsx()
     df.reset_index(inplace=True)
     df.replace(nan, '', inplace=True)
-    ls.put_dict('/cfg/system', {'lwacfg': df.to_dict(), 'mjd': time.Time.now().mjd})
+    ls.put_dict('/cfg/system', {'lwacfg': df.to_dict(), 'time': time.Time.now().mjd})
 
 
 def read_antpos_etcd():
@@ -42,7 +42,7 @@ def read_antpos_etcd():
     """
 
     dds = ls.get_dict('/cfg/system') 
-    df = pd.DataFrame.from_dict(dds['lwacfg']) # , orient='index')    
+    df = pd.DataFrame.from_dict(dds['lwacfg'], orient='index')
 
     assert "antname" in df.columns
     df.set_index('antname', inplace=True)
