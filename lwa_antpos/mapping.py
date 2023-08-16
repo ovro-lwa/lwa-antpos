@@ -89,3 +89,14 @@ def correlator_to_antname(corr_num):
     else:
         print(f'Did not find exactly one ant')
         return list(antlist)
+
+
+def arx_to_antpol(address, channel):
+    """ Given ARX address-channel, return ant-pol
+    """
+
+    df2 = filter_df('arx_address', address)
+    if channel in df2.pola_arx_channel.values:
+        return df2[df2['pola_arx_channel'] == channel].index.values[0] + 'A'
+    elif channel in df2.polb_arx_channel.values:
+        return df2[df2['polb_arx_channel'] == channel].index.values[0] + 'B'
