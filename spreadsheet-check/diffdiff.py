@@ -57,6 +57,11 @@ def diff_config_sigtab(config_locked: pd.DataFrame):
             assert sig==int(row[f'Pol {pol} FPGA Input #'])
     print(f'iterated over {n_rows} antpols')
 
+    print((online['Antenna\nname'] == 'LWA-266').any())
+    for ant in sigtab.antNames:
+        if not (online['Antenna\nname']==ant[:-1]).any():
+            print(f'{ant} in sigtab but not marked as online in configuration spreadsheet.')
+
 if __name__ == '__main__':
     config_locked, _ = diff_spreadsheets('config-locked.csv', 'config-20240228.csv')
     diff_config_sigtab(config_locked)
