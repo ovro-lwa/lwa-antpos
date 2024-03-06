@@ -50,6 +50,23 @@ def read_antpos_etcd():
     return df
 
 
+def read_antpos_yaml(filename=None):
+    """ reads antenna position info from yaml format file
+    """
+
+    if filename is None:
+        filename = resource_filename("lwa_antpos", "data/system_cfg.yml")
+
+    with open(filename, 'r') as fp:
+        data = yaml.load(fp)
+
+    df = pd.DataFrame.from_dict(data, orient='index')
+    assert "antname" in df.columns
+    df.set_index('antname', inplace=True)
+
+    return df
+
+
 def read_antpos_yaml(filename):
     """ Gets data from yaml and returns dataframe
     """
