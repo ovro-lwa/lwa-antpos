@@ -1,3 +1,32 @@
+LWA-000:
+    antname: LWA-000
+    antnumber: 0
+    latitude: 37.23977727
+    longitude: -118.2816667
+    elevation: 999999
+    used: false
+    online: false
+    snap2_serial: -1
+    snap2_chassis: -1
+    snap2_location: -1
+    snap2_hostname: ""
+    snap2_mac: ""
+    fmc: -1
+    pola_digitizer_channel: -1
+    polb_digitizer_channel: -1
+    arx_location: -1
+    arx_serial: -1
+    arx_address: -1
+    pola_arx_channel: -1
+    polb_arx_channel: -1
+    pola_resistance: 999999
+    polb_resistance: 999999
+    pola_fee: -1
+    polb_fee: -1
+    pola_fpga_num: -1
+    polb_fpga_num: -1
+    corr_num: -1
+    notes: ""
 LWA-001:
     antname: LWA-001
     antnumber: 1

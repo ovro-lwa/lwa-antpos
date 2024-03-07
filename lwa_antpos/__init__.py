@@ -10,8 +10,8 @@ from . import reading
 CNFCONF = resource_filename("lwa_antpos", "data/cnfConfig.yml")
 # TODO: eventually my_cnf can be read from etcd here
 try:
-    lwa_df = reading.read_antpos_etcd()
-    print('Read antpos from etcd')
+    lwa_df = reading.read_antpos_yaml()
+    print('Read antpos from yaml')
 except:
     try:
         lwa_df = reading.read_antpos_xlsx()

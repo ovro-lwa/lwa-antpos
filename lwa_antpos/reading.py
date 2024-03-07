@@ -9,6 +9,7 @@ from pkg_resources import resource_filename
 
 ls = dsa_store.DsaStore()
 antposfile = resource_filename("lwa_antpos", "data/LWA-352 Antenna Status & System Configuration.xlsx")
+antposfile_yaml = resource_filename("lwa_antpos", "data/system_cfg.yml")
 # "data/LWA-352 Antenna Positions & System Status.xlsx"  # old name
 
 
@@ -50,31 +51,14 @@ def read_antpos_etcd():
     return df
 
 
-def read_antpos_yaml(filename=None):
+def read_antpos_yaml(filename=antposfile_yaml):
     """ reads antenna position info from yaml format file
     """
 
-    if filename is None:
-        filename = resource_filename("lwa_antpos", "data/system_cfg.yml")
-
     with open(filename, 'r') as fp:
-        data = yaml.load(fp)
+        data = yaml.load(fp, Loader=yaml.FullLoader)
 
     df = pd.DataFrame.from_dict(data, orient='index')
-    assert "antname" in df.columns
-    df.set_index('antname', inplace=True)
-
-    return df
-
-
-def read_antpos_yaml(filename):
-    """ Gets data from yaml and returns dataframe
-    """
-
-    with open(filename, 'r') as fp:
-        dd = yaml.load(fp)
-
-    df = pd.DataFrame.from_dict(dd, orient='index')
     assert "antname" in df.columns
     df.set_index('antname', inplace=True)
 
