@@ -13,6 +13,24 @@ antposfile_yaml = resource_filename("lwa_antpos", "data/system_cfg.yml")
 # "data/LWA-352 Antenna Positions & System Status.xlsx"  # old name
 
 
+def read_antpos(source='yaml'):
+    """ Read the antenna position information and return a DataFrame.
+    Allows reading from specific source (yaml, etcd, xlsx).
+    """
+
+    assert source in ['yaml', 'etcd', 'xlsx']
+
+# could overload this way
+#    filename = filename if filename is not None else antposfile  
+
+    if source == 'yaml':
+        return read_antpos_yaml(filename=antposfile_yaml)
+    elif source == 'etcd':
+        return read_antpos_etcd()
+    elif source == 'xlsx':
+        return read_antpos_xlsx(filename=antposfile)
+
+
 def read_antpos_xlsx(filename=antposfile):
     """ Gets data from xlsx file and returns dataframe
     """
@@ -24,18 +42,6 @@ def read_antpos_xlsx(filename=antposfile):
     df.set_index('antname', inplace=True)
 
     return df
-
-def update_antpos_etcd():
-    """ Read xlsx format file, restructure, and put in etcd.
-    """
-
-    from astropy import time
-    from numpy import nan
-
-    df = read_antpos_xlsx()
-    df.reset_index(inplace=True)
-    df.replace(nan, '', inplace=True)
-    ls.put_dict('/cfg/system', {'lwacfg': df.to_dict(), 'time': time.Time.now().mjd})
 
 
 def read_antpos_etcd():
@@ -63,3 +69,16 @@ def read_antpos_yaml(filename=antposfile_yaml):
     df.set_index('antname', inplace=True)
 
     return df
+
+
+def update_antpos_etcd():
+    """ Read xlsx format file, restructure, and put in etcd.
+    """
+
+    from astropy import time
+    from numpy import nan
+
+    df = read_antpos_xlsx()
+    df.reset_index(inplace=True)
+    df.replace(nan, '', inplace=True)
+    ls.put_dict('/cfg/system', {'lwacfg': df.to_dict(), 'time': time.Time.now().mjd})
