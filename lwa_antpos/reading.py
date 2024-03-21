@@ -13,25 +13,26 @@ antposfile_yaml = resource_filename("lwa_antpos", "data/system_cfg.yml")
 # "data/LWA-352 Antenna Positions & System Status.xlsx"  # old name
 
 
-def read_antpos(source='yaml'):
+def read_antpos(source=None):
     """ Read the antenna position information and return a DataFrame.
     Allows reading from specific source (yaml, etcd, xlsx).
+    Default is typically best choice.
     """
+
+    if source is None:
+        source = 'yaml'
 
     assert source in ['yaml', 'etcd', 'xlsx']
 
-# could overload this way
-#    filename = filename if filename is not None else antposfile  
-
     if source == 'yaml':
-        return read_antpos_yaml(filename=antposfile_yaml)
+        return _read_antpos_yaml(filename=antposfile_yaml)
     elif source == 'etcd':
-        return read_antpos_etcd()
+        return _read_antpos_etcd()
     elif source == 'xlsx':
-        return read_antpos_xlsx(filename=antposfile)
+        return _read_antpos_xlsx(filename=antposfile)
 
 
-def read_antpos_xlsx(filename=antposfile):
+def _read_antpos_xlsx(filename=antposfile):
     """ Gets data from xlsx file and returns dataframe
     """
 
@@ -44,7 +45,7 @@ def read_antpos_xlsx(filename=antposfile):
     return df
 
 
-def read_antpos_etcd():
+def _read_antpos_etcd():
     """ Gets data from etcd and returns dataframe
     """
 
@@ -57,7 +58,7 @@ def read_antpos_etcd():
     return df
 
 
-def read_antpos_yaml(filename=antposfile_yaml):
+def _read_antpos_yaml(filename=antposfile_yaml):
     """ reads antenna position info from yaml format file
     """
 
@@ -73,6 +74,7 @@ def read_antpos_yaml(filename=antposfile_yaml):
 
 def update_antpos_etcd():
     """ Read xlsx format file, restructure, and put in etcd.
+    Not for general use. If parsing etcd fails, try another source and report it as an issue.
     """
 
     from astropy import time
