@@ -10,15 +10,19 @@ from . import reading
 CNFCONF = resource_filename("lwa_antpos", "data/cnfConfig.yml")
 # TODO: eventually my_cnf can be read from etcd here
 try:
-    lwa_df = reading.read_antpos_yaml()
-    print('Read antpos from yaml')
+    lwa_df = reading.read_antpos()
+    print('Read antpos from default source')
 except:
     try:
-        lwa_df = reading.read_antpos_xlsx()
-        print('Read antpos from xlsx file in repo')
+        lwa_df = reading.read_antpos_yaml()
+        print('Failed with default source. Forcing to yaml...')
     except:
-        lwa_df = None
-        print('Cannot reach either from etcd or xlsx file')
+        try:
+            lwa_df = reading.read_antpos_etcd()
+            print('Failed with default source. Forcing to etcd...')
+        except:
+            lwa_df = None
+            print('Cannot read antpos')
 
 if lwa_df is not None:
     if 'online' in lwa_df.columns:
