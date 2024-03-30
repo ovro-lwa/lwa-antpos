@@ -9,8 +9,8 @@ LWA-000:
     snap2_serial: -1
     snap2_chassis: -1
     snap2_location: -1
-    snap2_hostname: ""
-    snap2_mac: ""
+    snap2_hostname: ''
+    snap2_mac: ''
     fmc: -1
     pola_digitizer_channel: -1
     polb_digitizer_channel: -1
@@ -26,7 +26,8 @@ LWA-000:
     pola_fpga_num: -1
     polb_fpga_num: -1
     corr_num: -1
-    notes: ""
+    notes: ''
+    ant_type: null
 LWA-001:
     antname: LWA-001
     antnumber: 1
@@ -55,7 +56,8 @@ LWA-001:
     pola_fpga_num: 2
     polb_fpga_num: 3
     corr_num: 65
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-002:
     antname: LWA-002
     antnumber: 2
@@ -84,7 +86,8 @@ LWA-002:
     pola_fpga_num: 0
     polb_fpga_num: 1
     corr_num: 64
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-003:
     antname: LWA-003
     antnumber: 3
@@ -113,7 +116,8 @@ LWA-003:
     pola_fpga_num: 6
     polb_fpga_num: 7
     corr_num: 67
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-004:
     antname: LWA-004
     antnumber: 4
@@ -142,7 +146,8 @@ LWA-004:
     pola_fpga_num: 4
     polb_fpga_num: 5
     corr_num: 66
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-005:
     antname: LWA-005
     antnumber: 5
@@ -171,7 +176,8 @@ LWA-005:
     pola_fpga_num: 10
     polb_fpga_num: 11
     corr_num: 69
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-006:
     antname: LWA-006
     antnumber: 6
@@ -200,7 +206,8 @@ LWA-006:
     pola_fpga_num: 8
     polb_fpga_num: 9
     corr_num: 68
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-007:
     antname: LWA-007
     antnumber: 7
@@ -229,7 +236,8 @@ LWA-007:
     pola_fpga_num: 14
     polb_fpga_num: 15
     corr_num: 71
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-008:
     antname: LWA-008
     antnumber: 8
@@ -258,7 +266,8 @@ LWA-008:
     pola_fpga_num: 22
     polb_fpga_num: 23
     corr_num: 75
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-009:
     antname: LWA-009
     antnumber: 9
@@ -287,7 +296,8 @@ LWA-009:
     pola_fpga_num: 12
     polb_fpga_num: 13
     corr_num: 70
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-010:
     antname: LWA-010
     antnumber: 10
@@ -316,7 +326,8 @@ LWA-010:
     pola_fpga_num: 18
     polb_fpga_num: 19
     corr_num: 73
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-011:
     antname: LWA-011
     antnumber: 11
@@ -345,7 +356,8 @@ LWA-011:
     pola_fpga_num: 16
     polb_fpga_num: 17
     corr_num: 72
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-012:
     antname: LWA-012
     antnumber: 12
@@ -374,7 +386,8 @@ LWA-012:
     pola_fpga_num: 20
     polb_fpga_num: 21
     corr_num: 74
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-013:
     antname: LWA-013
     antnumber: 13
@@ -403,7 +416,8 @@ LWA-013:
     pola_fpga_num: 0
     polb_fpga_num: 1
     corr_num: 96
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-014:
     antname: LWA-014
     antnumber: 14
@@ -432,7 +446,8 @@ LWA-014:
     pola_fpga_num: 6
     polb_fpga_num: 7
     corr_num: 99
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-015:
     antname: LWA-015
     antnumber: 15
@@ -461,7 +476,8 @@ LWA-015:
     pola_fpga_num: 4
     polb_fpga_num: 5
     corr_num: 98
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-016:
     antname: LWA-016
     antnumber: 16
@@ -490,7 +506,8 @@ LWA-016:
     pola_fpga_num: 2
     polb_fpga_num: 3
     corr_num: 97
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-017:
     antname: LWA-017
     antnumber: 17
@@ -519,7 +536,8 @@ LWA-017:
     pola_fpga_num: 10
     polb_fpga_num: 11
     corr_num: 101
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-018:
     antname: LWA-018
     antnumber: 18
@@ -548,7 +566,8 @@ LWA-018:
     pola_fpga_num: 8
     polb_fpga_num: 9
     corr_num: 100
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-019:
     antname: LWA-019
     antnumber: 19
@@ -577,7 +596,8 @@ LWA-019:
     pola_fpga_num: 14
     polb_fpga_num: 15
     corr_num: 103
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-020:
     antname: LWA-020
     antnumber: 20
@@ -606,7 +626,8 @@ LWA-020:
     pola_fpga_num: 12
     polb_fpga_num: 13
     corr_num: 102
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-021:
     antname: LWA-021
     antnumber: 21
@@ -635,7 +656,8 @@ LWA-021:
     pola_fpga_num: 18
     polb_fpga_num: 19
     corr_num: 105
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-022:
     antname: LWA-022
     antnumber: 22
@@ -664,7 +686,8 @@ LWA-022:
     pola_fpga_num: 16
     polb_fpga_num: 17
     corr_num: 104
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-023:
     antname: LWA-023
     antnumber: 23
@@ -693,7 +716,8 @@ LWA-023:
     pola_fpga_num: 22
     polb_fpga_num: 23
     corr_num: 107
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-024:
     antname: LWA-024
     antnumber: 24
@@ -722,7 +746,8 @@ LWA-024:
     pola_fpga_num: 20
     polb_fpga_num: 21
     corr_num: 106
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-025:
     antname: LWA-025
     antnumber: 25
@@ -751,7 +776,8 @@ LWA-025:
     pola_fpga_num: 26
     polb_fpga_num: 27
     corr_num: 109
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-026:
     antname: LWA-026
     antnumber: 26
@@ -780,7 +806,8 @@ LWA-026:
     pola_fpga_num: 24
     polb_fpga_num: 25
     corr_num: 108
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-027:
     antname: LWA-027
     antnumber: 27
@@ -809,7 +836,8 @@ LWA-027:
     pola_fpga_num: 30
     polb_fpga_num: 31
     corr_num: 111
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-028:
     antname: LWA-028
     antnumber: 28
@@ -838,7 +866,8 @@ LWA-028:
     pola_fpga_num: 2
     polb_fpga_num: 3
     corr_num: 129
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-029:
     antname: LWA-029
     antnumber: 29
@@ -867,7 +896,8 @@ LWA-029:
     pola_fpga_num: 28
     polb_fpga_num: 29
     corr_num: 110
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-030:
     antname: LWA-030
     antnumber: 30
@@ -896,7 +926,8 @@ LWA-030:
     pola_fpga_num: 0
     polb_fpga_num: 1
     corr_num: 128
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-031:
     antname: LWA-031
     antnumber: 31
@@ -925,7 +956,8 @@ LWA-031:
     pola_fpga_num: 6
     polb_fpga_num: 7
     corr_num: 131
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-032:
     antname: LWA-032
     antnumber: 32
@@ -954,7 +986,8 @@ LWA-032:
     pola_fpga_num: 4
     polb_fpga_num: 5
     corr_num: 130
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-033:
     antname: LWA-033
     antnumber: 33
@@ -983,7 +1016,8 @@ LWA-033:
     pola_fpga_num: 2
     polb_fpga_num: 3
     corr_num: 161
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-034:
     antname: LWA-034
     antnumber: 34
@@ -1012,7 +1046,8 @@ LWA-034:
     pola_fpga_num: 4
     polb_fpga_num: 5
     corr_num: 162
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-035:
     antname: LWA-035
     antnumber: 35
@@ -1041,7 +1076,8 @@ LWA-035:
     pola_fpga_num: 0
     polb_fpga_num: 1
     corr_num: 160
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-036:
     antname: LWA-036
     antnumber: 36
@@ -1070,7 +1106,8 @@ LWA-036:
     pola_fpga_num: 6
     polb_fpga_num: 7
     corr_num: 163
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-037:
     antname: LWA-037
     antnumber: 37
@@ -1099,7 +1136,8 @@ LWA-037:
     pola_fpga_num: 42
     polb_fpga_num: 43
     corr_num: 181
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-038:
     antname: LWA-038
     antnumber: 38
@@ -1128,7 +1166,8 @@ LWA-038:
     pola_fpga_num: 26
     polb_fpga_num: 27
     corr_num: 77
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-040:
     antname: LWA-040
     antnumber: 40
@@ -1157,7 +1196,8 @@ LWA-040:
     pola_fpga_num: 24
     polb_fpga_num: 25
     corr_num: 76
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-041:
     antname: LWA-041
     antnumber: 41
@@ -1186,7 +1226,8 @@ LWA-041:
     pola_fpga_num: 30
     polb_fpga_num: 31
     corr_num: 79
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-042:
     antname: LWA-042
     antnumber: 42
@@ -1215,7 +1256,8 @@ LWA-042:
     pola_fpga_num: 28
     polb_fpga_num: 29
     corr_num: 78
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-043:
     antname: LWA-043
     antnumber: 43
@@ -1244,7 +1286,8 @@ LWA-043:
     pola_fpga_num: 34
     polb_fpga_num: 35
     corr_num: 81
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-044:
     antname: LWA-044
     antnumber: 44
@@ -1273,7 +1316,8 @@ LWA-044:
     pola_fpga_num: 32
     polb_fpga_num: 33
     corr_num: 80
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-045:
     antname: LWA-045
     antnumber: 45
@@ -1302,7 +1346,8 @@ LWA-045:
     pola_fpga_num: 38
     polb_fpga_num: 39
     corr_num: 83
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-046:
     antname: LWA-046
     antnumber: 46
@@ -1331,7 +1376,8 @@ LWA-046:
     pola_fpga_num: 36
     polb_fpga_num: 37
     corr_num: 82
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-047:
     antname: LWA-047
     antnumber: 47
@@ -1360,7 +1406,8 @@ LWA-047:
     pola_fpga_num: 42
     polb_fpga_num: 43
     corr_num: 85
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-048:
     antname: LWA-048
     antnumber: 48
@@ -1389,7 +1436,8 @@ LWA-048:
     pola_fpga_num: 34
     polb_fpga_num: 35
     corr_num: 113
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-049:
     antname: LWA-049
     antnumber: 49
@@ -1418,7 +1466,8 @@ LWA-049:
     pola_fpga_num: 32
     polb_fpga_num: 33
     corr_num: 112
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-050:
     antname: LWA-050
     antnumber: 50
@@ -1447,7 +1496,8 @@ LWA-050:
     pola_fpga_num: 38
     polb_fpga_num: 39
     corr_num: 115
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-051:
     antname: LWA-051
     antnumber: 51
@@ -1476,7 +1526,8 @@ LWA-051:
     pola_fpga_num: 36
     polb_fpga_num: 37
     corr_num: 114
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-052:
     antname: LWA-052
     antnumber: 52
@@ -1505,7 +1556,8 @@ LWA-052:
     pola_fpga_num: 42
     polb_fpga_num: 43
     corr_num: 117
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-053:
     antname: LWA-053
     antnumber: 53
@@ -1534,7 +1586,8 @@ LWA-053:
     pola_fpga_num: 40
     polb_fpga_num: 41
     corr_num: 116
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-054:
     antname: LWA-054
     antnumber: 54
@@ -1563,7 +1616,8 @@ LWA-054:
     pola_fpga_num: 44
     polb_fpga_num: 45
     corr_num: 118
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-055:
     antname: LWA-055
     antnumber: 55
@@ -1592,7 +1646,8 @@ LWA-055:
     pola_fpga_num: 50
     polb_fpga_num: 51
     corr_num: 121
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-056:
     antname: LWA-056
     antnumber: 56
@@ -1621,7 +1676,8 @@ LWA-056:
     pola_fpga_num: 14
     polb_fpga_num: 15
     corr_num: 135
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-057:
     antname: LWA-057
     antnumber: 57
@@ -1650,7 +1706,8 @@ LWA-057:
     pola_fpga_num: 12
     polb_fpga_num: 13
     corr_num: 134
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-058:
     antname: LWA-058
     antnumber: 58
@@ -1679,7 +1736,8 @@ LWA-058:
     pola_fpga_num: 18
     polb_fpga_num: 19
     corr_num: 137
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-059:
     antname: LWA-059
     antnumber: 59
@@ -1708,7 +1766,8 @@ LWA-059:
     pola_fpga_num: 16
     polb_fpga_num: 17
     corr_num: 136
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-060:
     antname: LWA-060
     antnumber: 60
@@ -1737,7 +1796,8 @@ LWA-060:
     pola_fpga_num: 10
     polb_fpga_num: 11
     corr_num: 133
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-061:
     antname: LWA-061
     antnumber: 61
@@ -1766,7 +1826,8 @@ LWA-061:
     pola_fpga_num: 22
     polb_fpga_num: 23
     corr_num: 139
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-062:
     antname: LWA-062
     antnumber: 62
@@ -1795,7 +1856,8 @@ LWA-062:
     pola_fpga_num: 20
     polb_fpga_num: 21
     corr_num: 138
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-063:
     antname: LWA-063
     antnumber: 63
@@ -1824,7 +1886,8 @@ LWA-063:
     pola_fpga_num: 8
     polb_fpga_num: 9
     corr_num: 132
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-064:
     antname: LWA-064
     antnumber: 64
@@ -1853,7 +1916,8 @@ LWA-064:
     pola_fpga_num: 26
     polb_fpga_num: 27
     corr_num: 141
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-065:
     antname: LWA-065
     antnumber: 65
@@ -1882,7 +1946,8 @@ LWA-065:
     pola_fpga_num: 10
     polb_fpga_num: 11
     corr_num: 165
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-066:
     antname: LWA-066
     antnumber: 66
@@ -1911,7 +1976,8 @@ LWA-066:
     pola_fpga_num: 8
     polb_fpga_num: 9
     corr_num: 164
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-067:
     antname: LWA-067
     antnumber: 67
@@ -1940,7 +2006,8 @@ LWA-067:
     pola_fpga_num: 14
     polb_fpga_num: 15
     corr_num: 167
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-068:
     antname: LWA-068
     antnumber: 68
@@ -1969,7 +2036,8 @@ LWA-068:
     pola_fpga_num: 12
     polb_fpga_num: 13
     corr_num: 166
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-069:
     antname: LWA-069
     antnumber: 69
@@ -1998,7 +2066,8 @@ LWA-069:
     pola_fpga_num: 18
     polb_fpga_num: 19
     corr_num: 169
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-070:
     antname: LWA-070
     antnumber: 70
@@ -2027,7 +2096,8 @@ LWA-070:
     pola_fpga_num: 16
     polb_fpga_num: 17
     corr_num: 168
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-071:
     antname: LWA-071
     antnumber: 71
@@ -2056,7 +2126,8 @@ LWA-071:
     pola_fpga_num: 40
     polb_fpga_num: 41
     corr_num: 84
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-072:
     antname: LWA-072
     antnumber: 72
@@ -2085,7 +2156,8 @@ LWA-072:
     pola_fpga_num: 22
     polb_fpga_num: 23
     corr_num: 171
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-073:
     antname: LWA-073
     antnumber: 73
@@ -2114,7 +2186,8 @@ LWA-073:
     pola_fpga_num: 46
     polb_fpga_num: 47
     corr_num: 87
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-074:
     antname: LWA-074
     antnumber: 74
@@ -2143,7 +2216,8 @@ LWA-074:
     pola_fpga_num: 44
     polb_fpga_num: 45
     corr_num: 86
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-075:
     antname: LWA-075
     antnumber: 75
@@ -2172,7 +2246,8 @@ LWA-075:
     pola_fpga_num: 50
     polb_fpga_num: 51
     corr_num: 89
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-076:
     antname: LWA-076
     antnumber: 76
@@ -2201,7 +2276,8 @@ LWA-076:
     pola_fpga_num: 2
     polb_fpga_num: 3
     corr_num: 193
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-077:
     antname: LWA-077
     antnumber: 77
@@ -2230,7 +2306,8 @@ LWA-077:
     pola_fpga_num: 48
     polb_fpga_num: 49
     corr_num: 88
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-078:
     antname: LWA-078
     antnumber: 78
@@ -2259,7 +2336,8 @@ LWA-078:
     pola_fpga_num: 0
     polb_fpga_num: 1
     corr_num: 192
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-079:
     antname: LWA-079
     antnumber: 79
@@ -2288,7 +2366,8 @@ LWA-079:
     pola_fpga_num: 6
     polb_fpga_num: 7
     corr_num: 195
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-080:
     antname: LWA-080
     antnumber: 80
@@ -2317,7 +2396,8 @@ LWA-080:
     pola_fpga_num: 46
     polb_fpga_num: 47
     corr_num: 119
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-081:
     antname: LWA-081
     antnumber: 81
@@ -2346,7 +2426,8 @@ LWA-081:
     pola_fpga_num: 4
     polb_fpga_num: 5
     corr_num: 194
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-082:
     antname: LWA-082
     antnumber: 82
@@ -2375,7 +2456,8 @@ LWA-082:
     pola_fpga_num: 34
     polb_fpga_num: 35
     corr_num: 209
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-084:
     antname: LWA-084
     antnumber: 84
@@ -2404,7 +2486,8 @@ LWA-084:
     pola_fpga_num: 48
     polb_fpga_num: 49
     corr_num: 120
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-085:
     antname: LWA-085
     antnumber: 85
@@ -2433,7 +2516,8 @@ LWA-085:
     pola_fpga_num: 24
     polb_fpga_num: 25
     corr_num: 140
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-086:
     antname: LWA-086
     antnumber: 86
@@ -2462,7 +2546,8 @@ LWA-086:
     pola_fpga_num: 30
     polb_fpga_num: 31
     corr_num: 143
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-087:
     antname: LWA-087
     antnumber: 87
@@ -2491,7 +2576,8 @@ LWA-087:
     pola_fpga_num: 28
     polb_fpga_num: 29
     corr_num: 142
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-089:
     antname: LWA-089
     antnumber: 89
@@ -2520,7 +2606,8 @@ LWA-089:
     pola_fpga_num: 32
     polb_fpga_num: 33
     corr_num: 144
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-090:
     antname: LWA-090
     antnumber: 90
@@ -2549,7 +2636,8 @@ LWA-090:
     pola_fpga_num: 38
     polb_fpga_num: 39
     corr_num: 147
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-091:
     antname: LWA-091
     antnumber: 91
@@ -2578,7 +2666,8 @@ LWA-091:
     pola_fpga_num: 36
     polb_fpga_num: 37
     corr_num: 146
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-092:
     antname: LWA-092
     antnumber: 92
@@ -2607,7 +2696,8 @@ LWA-092:
     pola_fpga_num: 42
     polb_fpga_num: 43
     corr_num: 149
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-093:
     antname: LWA-093
     antnumber: 93
@@ -2636,7 +2726,8 @@ LWA-093:
     pola_fpga_num: 40
     polb_fpga_num: 41
     corr_num: 148
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-094:
     antname: LWA-094
     antnumber: 94
@@ -2665,7 +2756,8 @@ LWA-094:
     pola_fpga_num: 46
     polb_fpga_num: 47
     corr_num: 151
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-095:
     antname: LWA-095
     antnumber: 95
@@ -2694,7 +2786,8 @@ LWA-095:
     pola_fpga_num: 44
     polb_fpga_num: 45
     corr_num: 150
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-096:
     antname: LWA-096
     antnumber: 96
@@ -2723,7 +2816,8 @@ LWA-096:
     pola_fpga_num: 34
     polb_fpga_num: 35
     corr_num: 145
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-097:
     antname: LWA-097
     antnumber: 97
@@ -2752,7 +2846,8 @@ LWA-097:
     pola_fpga_num: 20
     polb_fpga_num: 21
     corr_num: 170
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-098:
     antname: LWA-098
     antnumber: 98
@@ -2781,7 +2876,8 @@ LWA-098:
     pola_fpga_num: 26
     polb_fpga_num: 27
     corr_num: 173
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-099:
     antname: LWA-099
     antnumber: 99
@@ -2810,7 +2906,8 @@ LWA-099:
     pola_fpga_num: 24
     polb_fpga_num: 25
     corr_num: 172
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-100:
     antname: LWA-100
     antnumber: 100
@@ -2839,7 +2936,8 @@ LWA-100:
     pola_fpga_num: 30
     polb_fpga_num: 31
     corr_num: 175
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-101:
     antname: LWA-101
     antnumber: 101
@@ -2868,7 +2966,8 @@ LWA-101:
     pola_fpga_num: 28
     polb_fpga_num: 29
     corr_num: 174
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-102:
     antname: LWA-102
     antnumber: 102
@@ -2897,7 +2996,8 @@ LWA-102:
     pola_fpga_num: 34
     polb_fpga_num: 35
     corr_num: 177
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-103:
     antname: LWA-103
     antnumber: 103
@@ -2926,7 +3026,8 @@ LWA-103:
     pola_fpga_num: 32
     polb_fpga_num: 33
     corr_num: 176
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-104:
     antname: LWA-104
     antnumber: 104
@@ -2955,7 +3056,8 @@ LWA-104:
     pola_fpga_num: 38
     polb_fpga_num: 39
     corr_num: 179
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-105:
     antname: LWA-105
     antnumber: 105
@@ -2984,7 +3086,8 @@ LWA-105:
     pola_fpga_num: 36
     polb_fpga_num: 37
     corr_num: 178
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-107:
     antname: LWA-107
     antnumber: 107
@@ -3013,7 +3116,8 @@ LWA-107:
     pola_fpga_num: 10
     polb_fpga_num: 11
     corr_num: 197
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-108:
     antname: LWA-108
     antnumber: 108
@@ -3042,7 +3146,8 @@ LWA-108:
     pola_fpga_num: 8
     polb_fpga_num: 9
     corr_num: 196
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-109:
     antname: LWA-109
     antnumber: 109
@@ -3071,7 +3176,8 @@ LWA-109:
     pola_fpga_num: 14
     polb_fpga_num: 15
     corr_num: 199
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-110:
     antname: LWA-110
     antnumber: 110
@@ -3100,7 +3206,8 @@ LWA-110:
     pola_fpga_num: 12
     polb_fpga_num: 13
     corr_num: 198
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-111:
     antname: LWA-111
     antnumber: 111
@@ -3129,7 +3236,8 @@ LWA-111:
     pola_fpga_num: 18
     polb_fpga_num: 19
     corr_num: 201
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-112:
     antname: LWA-112
     antnumber: 112
@@ -3158,7 +3266,8 @@ LWA-112:
     pola_fpga_num: 16
     polb_fpga_num: 17
     corr_num: 200
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-113:
     antname: LWA-113
     antnumber: 113
@@ -3187,7 +3296,8 @@ LWA-113:
     pola_fpga_num: 22
     polb_fpga_num: 23
     corr_num: 203
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-114:
     antname: LWA-114
     antnumber: 114
@@ -3216,7 +3326,8 @@ LWA-114:
     pola_fpga_num: 20
     polb_fpga_num: 21
     corr_num: 202
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-115:
     antname: LWA-115
     antnumber: 115
@@ -3245,7 +3356,8 @@ LWA-115:
     pola_fpga_num: 26
     polb_fpga_num: 27
     corr_num: 205
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-116:
     antname: LWA-116
     antnumber: 116
@@ -3274,7 +3386,8 @@ LWA-116:
     pola_fpga_num: 24
     polb_fpga_num: 25
     corr_num: 204
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-117:
     antname: LWA-117
     antnumber: 117
@@ -3303,7 +3416,8 @@ LWA-117:
     pola_fpga_num: 30
     polb_fpga_num: 31
     corr_num: 207
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-118:
     antname: LWA-118
     antnumber: 118
@@ -3332,7 +3446,8 @@ LWA-118:
     pola_fpga_num: 28
     polb_fpga_num: 29
     corr_num: 206
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-120:
     antname: LWA-120
     antnumber: 120
@@ -3361,7 +3476,8 @@ LWA-120:
     pola_fpga_num: 32
     polb_fpga_num: 33
     corr_num: 208
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-121:
     antname: LWA-121
     antnumber: 121
@@ -3390,7 +3506,8 @@ LWA-121:
     pola_fpga_num: 50
     polb_fpga_num: 51
     corr_num: 153
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-122:
     antname: LWA-122
     antnumber: 122
@@ -3419,7 +3536,8 @@ LWA-122:
     pola_fpga_num: 48
     polb_fpga_num: 49
     corr_num: 152
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-124:
     antname: LWA-124
     antnumber: 124
@@ -3448,7 +3566,8 @@ LWA-124:
     pola_fpga_num: 0
     polb_fpga_num: 1
     corr_num: 224
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-125:
     antname: LWA-125
     antnumber: 125
@@ -3477,7 +3596,8 @@ LWA-125:
     pola_fpga_num: 6
     polb_fpga_num: 7
     corr_num: 227
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-126:
     antname: LWA-126
     antnumber: 126
@@ -3506,7 +3626,8 @@ LWA-126:
     pola_fpga_num: 4
     polb_fpga_num: 5
     corr_num: 226
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-127:
     antname: LWA-127
     antnumber: 127
@@ -3535,7 +3656,8 @@ LWA-127:
     pola_fpga_num: 2
     polb_fpga_num: 3
     corr_num: 225
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-128:
     antname: LWA-128
     antnumber: 128
@@ -3564,7 +3686,8 @@ LWA-128:
     pola_fpga_num: 10
     polb_fpga_num: 11
     corr_num: 229
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-129:
     antname: LWA-129
     antnumber: 129
@@ -3593,7 +3716,8 @@ LWA-129:
     pola_fpga_num: 40
     polb_fpga_num: 41
     corr_num: 180
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-130:
     antname: LWA-130
     antnumber: 130
@@ -3622,7 +3746,8 @@ LWA-130:
     pola_fpga_num: 46
     polb_fpga_num: 47
     corr_num: 183
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-131:
     antname: LWA-131
     antnumber: 131
@@ -3651,7 +3776,8 @@ LWA-131:
     pola_fpga_num: 44
     polb_fpga_num: 45
     corr_num: 182
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-132:
     antname: LWA-132
     antnumber: 132
@@ -3680,7 +3806,8 @@ LWA-132:
     pola_fpga_num: 50
     polb_fpga_num: 51
     corr_num: 185
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-133:
     antname: LWA-133
     antnumber: 133
@@ -3709,7 +3836,8 @@ LWA-133:
     pola_fpga_num: 2
     polb_fpga_num: 3
     corr_num: 257
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-134:
     antname: LWA-134
     antnumber: 134
@@ -3738,7 +3866,8 @@ LWA-134:
     pola_fpga_num: 48
     polb_fpga_num: 49
     corr_num: 184
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-135:
     antname: LWA-135
     antnumber: 135
@@ -3767,7 +3896,8 @@ LWA-135:
     pola_fpga_num: 0
     polb_fpga_num: 1
     corr_num: 256
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-136:
     antname: LWA-136
     antnumber: 136
@@ -3796,7 +3926,8 @@ LWA-136:
     pola_fpga_num: 6
     polb_fpga_num: 7
     corr_num: 259
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-137:
     antname: LWA-137
     antnumber: 137
@@ -3825,7 +3956,8 @@ LWA-137:
     pola_fpga_num: 4
     polb_fpga_num: 5
     corr_num: 258
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-138:
     antname: LWA-138
     antnumber: 138
@@ -3854,7 +3986,8 @@ LWA-138:
     pola_fpga_num: 10
     polb_fpga_num: 11
     corr_num: 261
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-139:
     antname: LWA-139
     antnumber: 139
@@ -3883,7 +4016,8 @@ LWA-139:
     pola_fpga_num: 54
     polb_fpga_num: 55
     corr_num: 187
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-140:
     antname: LWA-140
     antnumber: 140
@@ -3912,7 +4046,8 @@ LWA-140:
     pola_fpga_num: 8
     polb_fpga_num: 9
     corr_num: 260
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-141:
     antname: LWA-141
     antnumber: 141
@@ -3941,7 +4076,8 @@ LWA-141:
     pola_fpga_num: 14
     polb_fpga_num: 15
     corr_num: 263
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-142:
     antname: LWA-142
     antnumber: 142
@@ -3970,7 +4106,8 @@ LWA-142:
     pola_fpga_num: 38
     polb_fpga_num: 39
     corr_num: 211
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-143:
     antname: LWA-143
     antnumber: 143
@@ -3999,7 +4136,8 @@ LWA-143:
     pola_fpga_num: 36
     polb_fpga_num: 37
     corr_num: 210
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-144:
     antname: LWA-144
     antnumber: 144
@@ -4028,7 +4166,8 @@ LWA-144:
     pola_fpga_num: 42
     polb_fpga_num: 43
     corr_num: 213
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-145:
     antname: LWA-145
     antnumber: 145
@@ -4057,7 +4196,8 @@ LWA-145:
     pola_fpga_num: 40
     polb_fpga_num: 41
     corr_num: 212
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-147:
     antname: LWA-147
     antnumber: 147
@@ -4086,7 +4226,8 @@ LWA-147:
     pola_fpga_num: 44
     polb_fpga_num: 45
     corr_num: 214
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-148:
     antname: LWA-148
     antnumber: 148
@@ -4115,7 +4256,8 @@ LWA-148:
     pola_fpga_num: 50
     polb_fpga_num: 51
     corr_num: 217
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-149:
     antname: LWA-149
     antnumber: 149
@@ -4144,7 +4286,8 @@ LWA-149:
     pola_fpga_num: 48
     polb_fpga_num: 49
     corr_num: 216
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-150:
     antname: LWA-150
     antnumber: 150
@@ -4173,7 +4316,8 @@ LWA-150:
     pola_fpga_num: 46
     polb_fpga_num: 47
     corr_num: 215
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-151:
     antname: LWA-151
     antnumber: 151
@@ -4202,7 +4346,8 @@ LWA-151:
     pola_fpga_num: 52
     polb_fpga_num: 53
     corr_num: 218
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-153:
     antname: LWA-153
     antnumber: 153
@@ -4231,7 +4376,8 @@ LWA-153:
     pola_fpga_num: 12
     polb_fpga_num: 13
     corr_num: 230
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-154:
     antname: LWA-154
     antnumber: 154
@@ -4260,7 +4406,8 @@ LWA-154:
     pola_fpga_num: 18
     polb_fpga_num: 19
     corr_num: 233
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-155:
     antname: LWA-155
     antnumber: 155
@@ -4289,7 +4436,8 @@ LWA-155:
     pola_fpga_num: 16
     polb_fpga_num: 17
     corr_num: 232
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-156:
     antname: LWA-156
     antnumber: 156
@@ -4318,7 +4466,8 @@ LWA-156:
     pola_fpga_num: 22
     polb_fpga_num: 23
     corr_num: 235
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-157:
     antname: LWA-157
     antnumber: 157
@@ -4347,7 +4496,8 @@ LWA-157:
     pola_fpga_num: 20
     polb_fpga_num: 21
     corr_num: 234
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-158:
     antname: LWA-158
     antnumber: 158
@@ -4376,7 +4526,8 @@ LWA-158:
     pola_fpga_num: 26
     polb_fpga_num: 27
     corr_num: 237
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-159:
     antname: LWA-159
     antnumber: 159
@@ -4405,7 +4556,8 @@ LWA-159:
     pola_fpga_num: 24
     polb_fpga_num: 25
     corr_num: 236
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-160:
     antname: LWA-160
     antnumber: 160
@@ -4434,7 +4586,8 @@ LWA-160:
     pola_fpga_num: 30
     polb_fpga_num: 31
     corr_num: 239
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-161:
     antname: LWA-161
     antnumber: 161
@@ -4463,7 +4616,8 @@ LWA-161:
     pola_fpga_num: 12
     polb_fpga_num: 13
     corr_num: 262
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-162:
     antname: LWA-162
     antnumber: 162
@@ -4492,7 +4646,8 @@ LWA-162:
     pola_fpga_num: 18
     polb_fpga_num: 19
     corr_num: 265
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-163:
     antname: LWA-163
     antnumber: 163
@@ -4521,7 +4676,8 @@ LWA-163:
     pola_fpga_num: 16
     polb_fpga_num: 17
     corr_num: 264
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-164:
     antname: LWA-164
     antnumber: 164
@@ -4550,7 +4706,8 @@ LWA-164:
     pola_fpga_num: 22
     polb_fpga_num: 23
     corr_num: 267
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-165:
     antname: LWA-165
     antnumber: 165
@@ -4579,7 +4736,8 @@ LWA-165:
     pola_fpga_num: 20
     polb_fpga_num: 21
     corr_num: 266
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-166:
     antname: LWA-166
     antnumber: 166
@@ -4608,7 +4766,8 @@ LWA-166:
     pola_fpga_num: 26
     polb_fpga_num: 27
     corr_num: 269
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-167:
     antname: LWA-167
     antnumber: 167
@@ -4637,7 +4796,8 @@ LWA-167:
     pola_fpga_num: 24
     polb_fpga_num: 25
     corr_num: 268
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-169:
     antname: LWA-169
     antnumber: 169
@@ -4666,7 +4826,8 @@ LWA-169:
     pola_fpga_num: 8
     polb_fpga_num: 9
     corr_num: 292
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-170:
     antname: LWA-170
     antnumber: 170
@@ -4695,7 +4856,8 @@ LWA-170:
     pola_fpga_num: 0
     polb_fpga_num: 1
     corr_num: 288
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-171:
     antname: LWA-171
     antnumber: 171
@@ -4724,7 +4886,8 @@ LWA-171:
     pola_fpga_num: 6
     polb_fpga_num: 7
     corr_num: 291
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-172:
     antname: LWA-172
     antnumber: 172
@@ -4753,7 +4916,8 @@ LWA-172:
     pola_fpga_num: 54
     polb_fpga_num: 55
     corr_num: 219
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-173:
     antname: LWA-173
     antnumber: 173
@@ -4782,7 +4946,8 @@ LWA-173:
     pola_fpga_num: 4
     polb_fpga_num: 5
     corr_num: 290
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-175:
     antname: LWA-175
     antnumber: 175
@@ -4811,7 +4976,8 @@ LWA-175:
     pola_fpga_num: 10
     polb_fpga_num: 11
     corr_num: 293
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-176:
     antname: LWA-176
     antnumber: 176
@@ -4840,7 +5006,8 @@ LWA-176:
     pola_fpga_num: 10
     polb_fpga_num: 11
     corr_num: 325
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-177:
     antname: LWA-177
     antnumber: 177
@@ -4869,7 +5036,8 @@ LWA-177:
     pola_fpga_num: 0
     polb_fpga_num: 1
     corr_num: 320
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-178:
     antname: LWA-178
     antnumber: 178
@@ -4898,7 +5066,8 @@ LWA-178:
     pola_fpga_num: 58
     polb_fpga_num: 59
     corr_num: 221
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-179:
     antname: LWA-179
     antnumber: 179
@@ -4927,7 +5096,8 @@ LWA-179:
     pola_fpga_num: 6
     polb_fpga_num: 7
     corr_num: 323
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-180:
     antname: LWA-180
     antnumber: 180
@@ -4956,7 +5126,8 @@ LWA-180:
     pola_fpga_num: 4
     polb_fpga_num: 5
     corr_num: 322
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-181:
     antname: LWA-181
     antnumber: 181
@@ -4985,7 +5156,8 @@ LWA-181:
     pola_fpga_num: 14
     polb_fpga_num: 15
     corr_num: 231
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-182:
     antname: LWA-182
     antnumber: 182
@@ -5014,7 +5186,8 @@ LWA-182:
     pola_fpga_num: 28
     polb_fpga_num: 29
     corr_num: 238
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-183:
     antname: LWA-183
     antnumber: 183
@@ -5043,7 +5216,8 @@ LWA-183:
     pola_fpga_num: 8
     polb_fpga_num: 9
     corr_num: 324
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-184:
     antname: LWA-184
     antnumber: 184
@@ -5072,7 +5246,8 @@ LWA-184:
     pola_fpga_num: 34
     polb_fpga_num: 35
     corr_num: 241
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-185:
     antname: LWA-185
     antnumber: 185
@@ -5101,7 +5276,8 @@ LWA-185:
     pola_fpga_num: 32
     polb_fpga_num: 33
     corr_num: 240
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-186:
     antname: LWA-186
     antnumber: 186
@@ -5130,7 +5306,8 @@ LWA-186:
     pola_fpga_num: 38
     polb_fpga_num: 39
     corr_num: 243
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-187:
     antname: LWA-187
     antnumber: 187
@@ -5159,7 +5336,8 @@ LWA-187:
     pola_fpga_num: 36
     polb_fpga_num: 37
     corr_num: 242
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-188:
     antname: LWA-188
     antnumber: 188
@@ -5188,7 +5366,8 @@ LWA-188:
     pola_fpga_num: 8
     polb_fpga_num: 9
     corr_num: 228
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-189:
     antname: LWA-189
     antnumber: 189
@@ -5217,7 +5396,8 @@ LWA-189:
     pola_fpga_num: 42
     polb_fpga_num: 43
     corr_num: 245
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-190:
     antname: LWA-190
     antnumber: 190
@@ -5246,7 +5426,8 @@ LWA-190:
     pola_fpga_num: 40
     polb_fpga_num: 41
     corr_num: 244
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-191:
     antname: LWA-191
     antnumber: 191
@@ -5275,7 +5456,8 @@ LWA-191:
     pola_fpga_num: 44
     polb_fpga_num: 45
     corr_num: 246
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-192:
     antname: LWA-192
     antnumber: 192
@@ -5304,7 +5486,8 @@ LWA-192:
     pola_fpga_num: 46
     polb_fpga_num: 47
     corr_num: 247
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-193:
     antname: LWA-193
     antnumber: 193
@@ -5333,7 +5516,8 @@ LWA-193:
     pola_fpga_num: 28
     polb_fpga_num: 29
     corr_num: 270
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-194:
     antname: LWA-194
     antnumber: 194
@@ -5362,7 +5546,8 @@ LWA-194:
     pola_fpga_num: 34
     polb_fpga_num: 35
     corr_num: 273
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-195:
     antname: LWA-195
     antnumber: 195
@@ -5391,7 +5576,8 @@ LWA-195:
     pola_fpga_num: 32
     polb_fpga_num: 33
     corr_num: 272
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-196:
     antname: LWA-196
     antnumber: 196
@@ -5420,7 +5606,8 @@ LWA-196:
     pola_fpga_num: 38
     polb_fpga_num: 39
     corr_num: 275
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-197:
     antname: LWA-197
     antnumber: 197
@@ -5449,7 +5636,8 @@ LWA-197:
     pola_fpga_num: 36
     polb_fpga_num: 37
     corr_num: 274
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-198:
     antname: LWA-198
     antnumber: 198
@@ -5478,7 +5666,8 @@ LWA-198:
     pola_fpga_num: 30
     polb_fpga_num: 31
     corr_num: 271
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-199:
     antname: LWA-199
     antnumber: 199
@@ -5507,7 +5696,8 @@ LWA-199:
     pola_fpga_num: 42
     polb_fpga_num: 43
     corr_num: 277
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-200:
     antname: LWA-200
     antnumber: 200
@@ -5536,7 +5726,8 @@ LWA-200:
     pola_fpga_num: 40
     polb_fpga_num: 41
     corr_num: 276
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-201:
     antname: LWA-201
     antnumber: 201
@@ -5565,7 +5756,8 @@ LWA-201:
     pola_fpga_num: 46
     polb_fpga_num: 47
     corr_num: 279
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-202:
     antname: LWA-202
     antnumber: 202
@@ -5594,7 +5786,8 @@ LWA-202:
     pola_fpga_num: 44
     polb_fpga_num: 45
     corr_num: 278
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-203:
     antname: LWA-203
     antnumber: 203
@@ -5623,7 +5816,8 @@ LWA-203:
     pola_fpga_num: 14
     polb_fpga_num: 15
     corr_num: 295
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-204:
     antname: LWA-204
     antnumber: 204
@@ -5652,7 +5846,8 @@ LWA-204:
     pola_fpga_num: 12
     polb_fpga_num: 13
     corr_num: 294
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-205:
     antname: LWA-205
     antnumber: 205
@@ -5681,7 +5876,8 @@ LWA-205:
     pola_fpga_num: 18
     polb_fpga_num: 19
     corr_num: 297
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-206:
     antname: LWA-206
     antnumber: 206
@@ -5710,7 +5906,8 @@ LWA-206:
     pola_fpga_num: 16
     polb_fpga_num: 17
     corr_num: 296
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-207:
     antname: LWA-207
     antnumber: 207
@@ -5739,7 +5936,8 @@ LWA-207:
     pola_fpga_num: 22
     polb_fpga_num: 23
     corr_num: 299
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-208:
     antname: LWA-208
     antnumber: 208
@@ -5768,7 +5966,8 @@ LWA-208:
     pola_fpga_num: 20
     polb_fpga_num: 21
     corr_num: 298
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-209:
     antname: LWA-209
     antnumber: 209
@@ -5797,7 +5996,8 @@ LWA-209:
     pola_fpga_num: 26
     polb_fpga_num: 27
     corr_num: 301
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-210:
     antname: LWA-210
     antnumber: 210
@@ -5826,7 +6026,8 @@ LWA-210:
     pola_fpga_num: 24
     polb_fpga_num: 25
     corr_num: 300
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-211:
     antname: LWA-211
     antnumber: 211
@@ -5855,7 +6056,8 @@ LWA-211:
     pola_fpga_num: 14
     polb_fpga_num: 15
     corr_num: 327
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-212:
     antname: LWA-212
     antnumber: 212
@@ -5884,7 +6086,8 @@ LWA-212:
     pola_fpga_num: 12
     polb_fpga_num: 13
     corr_num: 326
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-213:
     antname: LWA-213
     antnumber: 213
@@ -5913,7 +6116,8 @@ LWA-213:
     pola_fpga_num: 18
     polb_fpga_num: 19
     corr_num: 329
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-214:
     antname: LWA-214
     antnumber: 214
@@ -5942,7 +6146,8 @@ LWA-214:
     pola_fpga_num: 16
     polb_fpga_num: 17
     corr_num: 328
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-215:
     antname: LWA-215
     antnumber: 215
@@ -5971,7 +6176,8 @@ LWA-215:
     pola_fpga_num: 22
     polb_fpga_num: 23
     corr_num: 331
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-217:
     antname: LWA-217
     antnumber: 217
@@ -6000,7 +6206,8 @@ LWA-217:
     pola_fpga_num: 26
     polb_fpga_num: 27
     corr_num: 333
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-218:
     antname: LWA-218
     antnumber: 218
@@ -6029,7 +6236,8 @@ LWA-218:
     pola_fpga_num: 24
     polb_fpga_num: 25
     corr_num: 332
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-219:
     antname: LWA-219
     antnumber: 219
@@ -6058,7 +6266,8 @@ LWA-219:
     pola_fpga_num: 30
     polb_fpga_num: 31
     corr_num: 335
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-221:
     antname: LWA-221
     antnumber: 221
@@ -6087,7 +6296,8 @@ LWA-221:
     pola_fpga_num: 28
     polb_fpga_num: 29
     corr_num: 334
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-222:
     antname: LWA-222
     antnumber: 222
@@ -6116,7 +6326,8 @@ LWA-222:
     pola_fpga_num: 50
     polb_fpga_num: 51
     corr_num: 249
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-223:
     antname: LWA-223
     antnumber: 223
@@ -6145,7 +6356,8 @@ LWA-223:
     pola_fpga_num: 34
     polb_fpga_num: 35
     corr_num: 337
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-224:
     antname: LWA-224
     antnumber: 224
@@ -6174,7 +6386,8 @@ LWA-224:
     pola_fpga_num: 48
     polb_fpga_num: 49
     corr_num: 248
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-225:
     antname: LWA-225
     antnumber: 225
@@ -6203,7 +6416,8 @@ LWA-225:
     pola_fpga_num: 50
     polb_fpga_num: 51
     corr_num: 281
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-226:
     antname: LWA-226
     antnumber: 226
@@ -6232,7 +6446,8 @@ LWA-226:
     pola_fpga_num: 32
     polb_fpga_num: 33
     corr_num: 304
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-227:
     antname: LWA-227
     antnumber: 227
@@ -6261,7 +6476,8 @@ LWA-227:
     pola_fpga_num: 48
     polb_fpga_num: 49
     corr_num: 280
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-228:
     antname: LWA-228
     antnumber: 228
@@ -6290,7 +6506,8 @@ LWA-228:
     pola_fpga_num: 28
     polb_fpga_num: 29
     corr_num: 302
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-229:
     antname: LWA-229
     antnumber: 229
@@ -6319,7 +6536,8 @@ LWA-229:
     pola_fpga_num: 34
     polb_fpga_num: 35
     corr_num: 305
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-230:
     antname: LWA-230
     antnumber: 230
@@ -6348,7 +6566,8 @@ LWA-230:
     pola_fpga_num: 30
     polb_fpga_num: 31
     corr_num: 303
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-232:
     antname: LWA-232
     antnumber: 232
@@ -6377,7 +6596,8 @@ LWA-232:
     pola_fpga_num: 38
     polb_fpga_num: 39
     corr_num: 307
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-233:
     antname: LWA-233
     antnumber: 233
@@ -6406,7 +6626,8 @@ LWA-233:
     pola_fpga_num: 36
     polb_fpga_num: 37
     corr_num: 306
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-234:
     antname: LWA-234
     antnumber: 234
@@ -6435,7 +6656,8 @@ LWA-234:
     pola_fpga_num: 2
     polb_fpga_num: 3
     corr_num: 289
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-235:
     antname: LWA-235
     antnumber: 235
@@ -6464,7 +6686,8 @@ LWA-235:
     pola_fpga_num: 42
     polb_fpga_num: 43
     corr_num: 309
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-236:
     antname: LWA-236
     antnumber: 236
@@ -6493,7 +6716,8 @@ LWA-236:
     pola_fpga_num: 40
     polb_fpga_num: 41
     corr_num: 308
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-237:
     antname: LWA-237
     antnumber: 237
@@ -6522,7 +6746,8 @@ LWA-237:
     pola_fpga_num: 46
     polb_fpga_num: 47
     corr_num: 311
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-238:
     antname: LWA-238
     antnumber: 238
@@ -6551,7 +6776,8 @@ LWA-238:
     pola_fpga_num: 44
     polb_fpga_num: 45
     corr_num: 310
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-239:
     antname: LWA-239
     antnumber: 239
@@ -6580,7 +6806,8 @@ LWA-239:
     pola_fpga_num: 50
     polb_fpga_num: 51
     corr_num: 313
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-240:
     antname: LWA-240
     antnumber: 240
@@ -6609,7 +6836,8 @@ LWA-240:
     pola_fpga_num: 48
     polb_fpga_num: 49
     corr_num: 312
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-241:
     antname: LWA-241
     antnumber: 241
@@ -6638,7 +6866,8 @@ LWA-241:
     pola_fpga_num: 32
     polb_fpga_num: 33
     corr_num: 336
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-242:
     antname: LWA-242
     antnumber: 242
@@ -6667,7 +6896,8 @@ LWA-242:
     pola_fpga_num: 38
     polb_fpga_num: 39
     corr_num: 339
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-243:
     antname: LWA-243
     antnumber: 243
@@ -6696,7 +6926,8 @@ LWA-243:
     pola_fpga_num: 20
     polb_fpga_num: 21
     corr_num: 330
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-244:
     antname: LWA-244
     antnumber: 244
@@ -6725,7 +6956,8 @@ LWA-244:
     pola_fpga_num: 36
     polb_fpga_num: 37
     corr_num: 338
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-245:
     antname: LWA-245
     antnumber: 245
@@ -6754,7 +6986,8 @@ LWA-245:
     pola_fpga_num: 42
     polb_fpga_num: 43
     corr_num: 341
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-246:
     antname: LWA-246
     antnumber: 246
@@ -6783,7 +7016,8 @@ LWA-246:
     pola_fpga_num: 40
     polb_fpga_num: 41
     corr_num: 340
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-247:
     antname: LWA-247
     antnumber: 247
@@ -6812,7 +7046,8 @@ LWA-247:
     pola_fpga_num: 2
     polb_fpga_num: 3
     corr_num: 321
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-248:
     antname: LWA-248
     antnumber: 248
@@ -6841,7 +7076,8 @@ LWA-248:
     pola_fpga_num: 46
     polb_fpga_num: 47
     corr_num: 343
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-249:
     antname: LWA-249
     antnumber: 249
@@ -6870,7 +7106,8 @@ LWA-249:
     pola_fpga_num: 44
     polb_fpga_num: 45
     corr_num: 342
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-250:
     antname: LWA-250
     antnumber: 250
@@ -6899,7 +7136,8 @@ LWA-250:
     pola_fpga_num: 50
     polb_fpga_num: 51
     corr_num: 345
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-251:
     antname: LWA-251
     antnumber: 251
@@ -6928,7 +7166,8 @@ LWA-251:
     pola_fpga_num: 48
     polb_fpga_num: 49
     corr_num: 344
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-252:
     antname: LWA-252
     antnumber: 252
@@ -6957,7 +7196,8 @@ LWA-252:
     pola_fpga_num: 52
     polb_fpga_num: 53
     corr_num: 186
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-253:
     antname: LWA-253
     antnumber: 253
@@ -6986,7 +7226,8 @@ LWA-253:
     pola_fpga_num: 54
     polb_fpga_num: 55
     corr_num: 283
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-254:
     antname: LWA-254
     antnumber: 254
@@ -7015,7 +7256,8 @@ LWA-254:
     pola_fpga_num: 54
     polb_fpga_num: 55
     corr_num: 315
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-255:
     antname: LWA-255
     antnumber: 255
@@ -7044,7 +7286,8 @@ LWA-255:
     pola_fpga_num: 2
     polb_fpga_num: 3
     corr_num: 33
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-256:
     antname: LWA-256
     antnumber: 256
@@ -7073,7 +7316,8 @@ LWA-256:
     pola_fpga_num: 54
     polb_fpga_num: 55
     corr_num: 347
-    notes: ""
+    notes: ''
+    ant_type: Coaxial
 LWA-257:
     antname: LWA-257
     antnumber: 257
@@ -7102,7 +7346,8 @@ LWA-257:
     pola_fpga_num: 0
     polb_fpga_num: 1
     corr_num: 32
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-258:
     antname: LWA-258
     antnumber: 258
@@ -7131,7 +7376,8 @@ LWA-258:
     pola_fpga_num: 6
     polb_fpga_num: 7
     corr_num: 35
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-259:
     antname: LWA-259
     antnumber: 259
@@ -7160,7 +7406,8 @@ LWA-259:
     pola_fpga_num: 2
     polb_fpga_num: 3
     corr_num: 1
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-260:
     antname: LWA-260
     antnumber: 260
@@ -7189,7 +7436,8 @@ LWA-260:
     pola_fpga_num: 4
     polb_fpga_num: 5
     corr_num: 34
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-261:
     antname: LWA-261
     antnumber: 261
@@ -7218,7 +7466,8 @@ LWA-261:
     pola_fpga_num: 52
     polb_fpga_num: 53
     corr_num: 346
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-262:
     antname: LWA-262
     antnumber: 262
@@ -7247,7 +7496,8 @@ LWA-262:
     pola_fpga_num: 54
     polb_fpga_num: 55
     corr_num: 123
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-263:
     antname: LWA-263
     antnumber: 263
@@ -7276,7 +7526,8 @@ LWA-263:
     pola_fpga_num: 10
     polb_fpga_num: 11
     corr_num: 37
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-264:
     antname: LWA-264
     antnumber: 264
@@ -7305,7 +7556,8 @@ LWA-264:
     pola_fpga_num: 58
     polb_fpga_num: 59
     corr_num: 349
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-265:
     antname: LWA-265
     antnumber: 265
@@ -7334,7 +7586,8 @@ LWA-265:
     pola_fpga_num: 8
     polb_fpga_num: 9
     corr_num: 36
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-266:
     antname: LWA-266
     antnumber: 266
@@ -7363,7 +7616,8 @@ LWA-266:
     pola_fpga_num: 0
     polb_fpga_num: 1
     corr_num: 0
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-267:
     antname: LWA-267
     antnumber: 267
@@ -7392,7 +7646,8 @@ LWA-267:
     pola_fpga_num: 6
     polb_fpga_num: 7
     corr_num: 3
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-268:
     antname: LWA-268
     antnumber: 268
@@ -7421,7 +7676,8 @@ LWA-268:
     pola_fpga_num: 4
     polb_fpga_num: 5
     corr_num: 2
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-269:
     antname: LWA-269
     antnumber: 269
@@ -7450,7 +7706,8 @@ LWA-269:
     pola_fpga_num: 10
     polb_fpga_num: 11
     corr_num: 5
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-270:
     antname: LWA-270
     antnumber: 270
@@ -7479,7 +7736,8 @@ LWA-270:
     pola_fpga_num: 14
     polb_fpga_num: 15
     corr_num: 39
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-271:
     antname: LWA-271
     antnumber: 271
@@ -7508,7 +7766,8 @@ LWA-271:
     pola_fpga_num: 8
     polb_fpga_num: 9
     corr_num: 4
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-272:
     antname: LWA-272
     antnumber: 272
@@ -7537,7 +7796,8 @@ LWA-272:
     pola_fpga_num: 12
     polb_fpga_num: 13
     corr_num: 38
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-273:
     antname: LWA-273
     antnumber: 273
@@ -7566,7 +7826,8 @@ LWA-273:
     pola_fpga_num: 14
     polb_fpga_num: 15
     corr_num: 7
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-274:
     antname: LWA-274
     antnumber: 274
@@ -7595,7 +7856,8 @@ LWA-274:
     pola_fpga_num: 54
     polb_fpga_num: 55
     corr_num: 91
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-275:
     antname: LWA-275
     antnumber: 275
@@ -7624,7 +7886,8 @@ LWA-275:
     pola_fpga_num: 52
     polb_fpga_num: 53
     corr_num: 90
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-276:
     antname: LWA-276
     antnumber: 276
@@ -7653,7 +7916,8 @@ LWA-276:
     pola_fpga_num: 12
     polb_fpga_num: 13
     corr_num: 6
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-277:
     antname: LWA-277
     antnumber: 277
@@ -7682,7 +7946,8 @@ LWA-277:
     pola_fpga_num: 18
     polb_fpga_num: 19
     corr_num: 9
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-278:
     antname: LWA-278
     antnumber: 278
@@ -7711,7 +7976,8 @@ LWA-278:
     pola_fpga_num: 16
     polb_fpga_num: 17
     corr_num: 8
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-279:
     antname: LWA-279
     antnumber: 279
@@ -7740,7 +8006,8 @@ LWA-279:
     pola_fpga_num: 56
     polb_fpga_num: 57
     corr_num: 220
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-280:
     antname: LWA-280
     antnumber: 280
@@ -7769,7 +8036,8 @@ LWA-280:
     pola_fpga_num: 18
     polb_fpga_num: 19
     corr_num: 41
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-281:
     antname: LWA-281
     antnumber: 281
@@ -7798,7 +8066,8 @@ LWA-281:
     pola_fpga_num: 22
     polb_fpga_num: 23
     corr_num: 11
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-282:
     antname: LWA-282
     antnumber: 282
@@ -7827,7 +8096,8 @@ LWA-282:
     pola_fpga_num: 20
     polb_fpga_num: 21
     corr_num: 10
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-283:
     antname: LWA-283
     antnumber: 283
@@ -7856,7 +8126,8 @@ LWA-283:
     pola_fpga_num: 16
     polb_fpga_num: 17
     corr_num: 40
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-284:
     antname: LWA-284
     antnumber: 284
@@ -7885,7 +8156,8 @@ LWA-284:
     pola_fpga_num: 22
     polb_fpga_num: 23
     corr_num: 43
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-285:
     antname: LWA-285
     antnumber: 285
@@ -7914,7 +8186,8 @@ LWA-285:
     pola_fpga_num: 26
     polb_fpga_num: 27
     corr_num: 13
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-286:
     antname: LWA-286
     antnumber: 286
@@ -7943,7 +8216,8 @@ LWA-286:
     pola_fpga_num: 58
     polb_fpga_num: 59
     corr_num: 93
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-287:
     antname: LWA-287
     antnumber: 287
@@ -7972,7 +8246,8 @@ LWA-287:
     pola_fpga_num: 62
     polb_fpga_num: 63
     corr_num: 223
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-288:
     antname: LWA-288
     antnumber: 288
@@ -8001,7 +8276,8 @@ LWA-288:
     pola_fpga_num: 20
     polb_fpga_num: 21
     corr_num: 42
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-289:
     antname: LWA-289
     antnumber: 289
@@ -8030,7 +8306,8 @@ LWA-289:
     pola_fpga_num: 58
     polb_fpga_num: 59
     corr_num: 189
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-290:
     antname: LWA-290
     antnumber: 290
@@ -8059,7 +8336,8 @@ LWA-290:
     pola_fpga_num: 58
     polb_fpga_num: 59
     corr_num: 285
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-291:
     antname: LWA-291
     antnumber: 291
@@ -8088,7 +8366,8 @@ LWA-291:
     pola_fpga_num: 26
     polb_fpga_num: 27
     corr_num: 45
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-292:
     antname: LWA-292
     antnumber: 292
@@ -8117,7 +8396,8 @@ LWA-292:
     pola_fpga_num: 24
     polb_fpga_num: 25
     corr_num: 44
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-293:
     antname: LWA-293
     antnumber: 293
@@ -8146,7 +8426,8 @@ LWA-293:
     pola_fpga_num: 56
     polb_fpga_num: 57
     corr_num: 284
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-294:
     antname: LWA-294
     antnumber: 294
@@ -8175,7 +8456,8 @@ LWA-294:
     pola_fpga_num: 56
     polb_fpga_num: 57
     corr_num: 188
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-295:
     antname: LWA-295
     antnumber: 295
@@ -8204,7 +8486,8 @@ LWA-295:
     pola_fpga_num: 30
     polb_fpga_num: 31
     corr_num: 47
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-296:
     antname: LWA-296
     antnumber: 296
@@ -8233,7 +8516,8 @@ LWA-296:
     pola_fpga_num: 28
     polb_fpga_num: 29
     corr_num: 46
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-297:
     antname: LWA-297
     antnumber: 297
@@ -8262,7 +8546,8 @@ LWA-297:
     pola_fpga_num: 52
     polb_fpga_num: 53
     corr_num: 314
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-298:
     antname: LWA-298
     antnumber: 298
@@ -8291,7 +8576,8 @@ LWA-298:
     pola_fpga_num: 34
     polb_fpga_num: 35
     corr_num: 49
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-299:
     antname: LWA-299
     antnumber: 299
@@ -8320,7 +8606,8 @@ LWA-299:
     pola_fpga_num: 62
     polb_fpga_num: 63
     corr_num: 191
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-300:
     antname: LWA-300
     antnumber: 300
@@ -8349,7 +8636,8 @@ LWA-300:
     pola_fpga_num: 56
     polb_fpga_num: 57
     corr_num: 348
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-301:
     antname: LWA-301
     antnumber: 301
@@ -8378,7 +8666,8 @@ LWA-301:
     pola_fpga_num: 32
     polb_fpga_num: 33
     corr_num: 48
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-302:
     antname: LWA-302
     antnumber: 302
@@ -8407,7 +8696,8 @@ LWA-302:
     pola_fpga_num: 56
     polb_fpga_num: 57
     corr_num: 92
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-303:
     antname: LWA-303
     antnumber: 303
@@ -8436,7 +8726,8 @@ LWA-303:
     pola_fpga_num: 38
     polb_fpga_num: 39
     corr_num: 51
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-304:
     antname: LWA-304
     antnumber: 304
@@ -8465,7 +8756,8 @@ LWA-304:
     pola_fpga_num: 62
     polb_fpga_num: 63
     corr_num: 351
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-305:
     antname: LWA-305
     antnumber: 305
@@ -8494,7 +8786,8 @@ LWA-305:
     pola_fpga_num: 36
     polb_fpga_num: 37
     corr_num: 50
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-306:
     antname: LWA-306
     antnumber: 306
@@ -8523,7 +8816,8 @@ LWA-306:
     pola_fpga_num: 42
     polb_fpga_num: 43
     corr_num: 53
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-307:
     antname: LWA-307
     antnumber: 307
@@ -8552,7 +8846,8 @@ LWA-307:
     pola_fpga_num: 24
     polb_fpga_num: 25
     corr_num: 12
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-308:
     antname: LWA-308
     antnumber: 308
@@ -8581,7 +8876,8 @@ LWA-308:
     pola_fpga_num: 30
     polb_fpga_num: 31
     corr_num: 15
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-309:
     antname: LWA-309
     antnumber: 309
@@ -8610,7 +8906,8 @@ LWA-309:
     pola_fpga_num: 28
     polb_fpga_num: 29
     corr_num: 14
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-310:
     antname: LWA-310
     antnumber: 310
@@ -8639,7 +8936,8 @@ LWA-310:
     pola_fpga_num: 34
     polb_fpga_num: 35
     corr_num: 17
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-311:
     antname: LWA-311
     antnumber: 311
@@ -8668,7 +8966,8 @@ LWA-311:
     pola_fpga_num: 32
     polb_fpga_num: 33
     corr_num: 16
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-312:
     antname: LWA-312
     antnumber: 312
@@ -8697,7 +8996,8 @@ LWA-312:
     pola_fpga_num: 38
     polb_fpga_num: 39
     corr_num: 19
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-313:
     antname: LWA-313
     antnumber: 313
@@ -8726,7 +9026,8 @@ LWA-313:
     pola_fpga_num: 36
     polb_fpga_num: 37
     corr_num: 18
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-314:
     antname: LWA-314
     antnumber: 314
@@ -8755,7 +9056,8 @@ LWA-314:
     pola_fpga_num: 42
     polb_fpga_num: 43
     corr_num: 21
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-315:
     antname: LWA-315
     antnumber: 315
@@ -8784,7 +9086,8 @@ LWA-315:
     pola_fpga_num: 60
     polb_fpga_num: 61
     corr_num: 350
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-316:
     antname: LWA-316
     antnumber: 316
@@ -8813,7 +9116,8 @@ LWA-316:
     pola_fpga_num: 54
     polb_fpga_num: 55
     corr_num: 155
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-317:
     antname: LWA-317
     antnumber: 317
@@ -8842,7 +9146,8 @@ LWA-317:
     pola_fpga_num: 40
     polb_fpga_num: 41
     corr_num: 52
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-318:
     antname: LWA-318
     antnumber: 318
@@ -8871,7 +9176,8 @@ LWA-318:
     pola_fpga_num: 46
     polb_fpga_num: 47
     corr_num: 55
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-319:
     antname: LWA-319
     antnumber: 319
@@ -8900,7 +9206,8 @@ LWA-319:
     pola_fpga_num: 60
     polb_fpga_num: 61
     corr_num: 190
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-320:
     antname: LWA-320
     antnumber: 320
@@ -8929,7 +9236,8 @@ LWA-320:
     pola_fpga_num: 44
     polb_fpga_num: 45
     corr_num: 54
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-321:
     antname: LWA-321
     antnumber: 321
@@ -8958,7 +9266,8 @@ LWA-321:
     pola_fpga_num: 40
     polb_fpga_num: 41
     corr_num: 20
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-322:
     antname: LWA-322
     antnumber: 322
@@ -8987,7 +9296,8 @@ LWA-322:
     pola_fpga_num: 54
     polb_fpga_num: 55
     corr_num: 251
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-323:
     antname: LWA-323
     antnumber: 323
@@ -9016,7 +9326,8 @@ LWA-323:
     pola_fpga_num: 62
     polb_fpga_num: 63
     corr_num: 95
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-324:
     antname: LWA-324
     antnumber: 324
@@ -9045,7 +9356,8 @@ LWA-324:
     pola_fpga_num: 52
     polb_fpga_num: 53
     corr_num: 122
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-325:
     antname: LWA-325
     antnumber: 325
@@ -9074,7 +9386,8 @@ LWA-325:
     pola_fpga_num: 52
     polb_fpga_num: 53
     corr_num: 154
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-326:
     antname: LWA-326
     antnumber: 326
@@ -9103,7 +9416,8 @@ LWA-326:
     pola_fpga_num: 52
     polb_fpga_num: 53
     corr_num: 250
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-327:
     antname: LWA-327
     antnumber: 327
@@ -9132,7 +9446,8 @@ LWA-327:
     pola_fpga_num: 46
     polb_fpga_num: 47
     corr_num: 23
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-328:
     antname: LWA-328
     antnumber: 328
@@ -9161,7 +9476,8 @@ LWA-328:
     pola_fpga_num: 58
     polb_fpga_num: 59
     corr_num: 157
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-329:
     antname: LWA-329
     antnumber: 329
@@ -9190,7 +9506,8 @@ LWA-329:
     pola_fpga_num: 62
     polb_fpga_num: 63
     corr_num: 287
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-330:
     antname: LWA-330
     antnumber: 330
@@ -9219,7 +9536,8 @@ LWA-330:
     pola_fpga_num: 44
     polb_fpga_num: 45
     corr_num: 22
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-331:
     antname: LWA-331
     antnumber: 331
@@ -9248,7 +9566,8 @@ LWA-331:
     pola_fpga_num: 58
     polb_fpga_num: 59
     corr_num: 125
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-332:
     antname: LWA-332
     antnumber: 332
@@ -9277,7 +9596,8 @@ LWA-332:
     pola_fpga_num: 50
     polb_fpga_num: 51
     corr_num: 25
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-333:
     antname: LWA-333
     antnumber: 333
@@ -9306,7 +9626,8 @@ LWA-333:
     pola_fpga_num: 58
     polb_fpga_num: 59
     corr_num: 253
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-334:
     antname: LWA-334
     antnumber: 334
@@ -9335,7 +9656,8 @@ LWA-334:
     pola_fpga_num: 56
     polb_fpga_num: 57
     corr_num: 156
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-335:
     antname: LWA-335
     antnumber: 335
@@ -9364,7 +9686,8 @@ LWA-335:
     pola_fpga_num: 50
     polb_fpga_num: 51
     corr_num: 57
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-336:
     antname: LWA-336
     antnumber: 336
@@ -9393,7 +9716,8 @@ LWA-336:
     pola_fpga_num: 48
     polb_fpga_num: 49
     corr_num: 56
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-337:
     antname: LWA-337
     antnumber: 337
@@ -9422,7 +9746,8 @@ LWA-337:
     pola_fpga_num: 54
     polb_fpga_num: 55
     corr_num: 59
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-338:
     antname: LWA-338
     antnumber: 338
@@ -9451,7 +9776,8 @@ LWA-338:
     pola_fpga_num: 48
     polb_fpga_num: 49
     corr_num: 24
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-339:
     antname: LWA-339
     antnumber: 339
@@ -9480,7 +9806,8 @@ LWA-339:
     pola_fpga_num: 54
     polb_fpga_num: 55
     corr_num: 27
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-340:
     antname: LWA-340
     antnumber: 340
@@ -9509,7 +9836,8 @@ LWA-340:
     pola_fpga_num: 52
     polb_fpga_num: 53
     corr_num: 26
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-341:
     antname: LWA-341
     antnumber: 341
@@ -9538,7 +9866,8 @@ LWA-341:
     pola_fpga_num: 58
     polb_fpga_num: 59
     corr_num: 29
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-342:
     antname: LWA-342
     antnumber: 342
@@ -9567,7 +9896,8 @@ LWA-342:
     pola_fpga_num: 58
     polb_fpga_num: 59
     corr_num: 317
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-343:
     antname: LWA-343
     antnumber: 343
@@ -9596,7 +9926,8 @@ LWA-343:
     pola_fpga_num: 52
     polb_fpga_num: 53
     corr_num: 58
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-344:
     antname: LWA-344
     antnumber: 344
@@ -9625,7 +9956,8 @@ LWA-344:
     pola_fpga_num: 58
     polb_fpga_num: 59
     corr_num: 61
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-345:
     antname: LWA-345
     antnumber: 345
@@ -9654,7 +9986,8 @@ LWA-345:
     pola_fpga_num: 56
     polb_fpga_num: 57
     corr_num: 252
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-346:
     antname: LWA-346
     antnumber: 346
@@ -9683,7 +10016,8 @@ LWA-346:
     pola_fpga_num: 56
     polb_fpga_num: 57
     corr_num: 316
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-347:
     antname: LWA-347
     antnumber: 347
@@ -9712,7 +10046,8 @@ LWA-347:
     pola_fpga_num: 62
     polb_fpga_num: 63
     corr_num: 255
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-348:
     antname: LWA-348
     antnumber: 348
@@ -9741,7 +10076,8 @@ LWA-348:
     pola_fpga_num: 56
     polb_fpga_num: 57
     corr_num: 124
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-349:
     antname: LWA-349
     antnumber: 349
@@ -9770,7 +10106,8 @@ LWA-349:
     pola_fpga_num: 52
     polb_fpga_num: 53
     corr_num: 282
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-350:
     antname: LWA-350
     antnumber: 350
@@ -9799,7 +10136,8 @@ LWA-350:
     pola_fpga_num: 62
     polb_fpga_num: 63
     corr_num: 319
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-351:
     antname: LWA-351
     antnumber: 351
@@ -9828,7 +10166,8 @@ LWA-351:
     pola_fpga_num: 56
     polb_fpga_num: 57
     corr_num: 60
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-352:
     antname: LWA-352
     antnumber: 352
@@ -9857,7 +10196,8 @@ LWA-352:
     pola_fpga_num: 56
     polb_fpga_num: 57
     corr_num: 28
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-353:
     antname: LWA-353
     antnumber: 353
@@ -9886,7 +10226,8 @@ LWA-353:
     pola_fpga_num: 62
     polb_fpga_num: 63
     corr_num: 31
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-354:
     antname: LWA-354
     antnumber: 354
@@ -9915,7 +10256,8 @@ LWA-354:
     pola_fpga_num: 62
     polb_fpga_num: 63
     corr_num: 63
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-355:
     antname: LWA-355
     antnumber: 355
@@ -9944,7 +10286,8 @@ LWA-355:
     pola_fpga_num: 60
     polb_fpga_num: 61
     corr_num: 222
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-356:
     antname: LWA-356
     antnumber: 356
@@ -9973,7 +10316,8 @@ LWA-356:
     pola_fpga_num: 60
     polb_fpga_num: 61
     corr_num: 318
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-357:
     antname: LWA-357
     antnumber: 357
@@ -10002,7 +10346,8 @@ LWA-357:
     pola_fpga_num: 60
     polb_fpga_num: 61
     corr_num: 286
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-358:
     antname: LWA-358
     antnumber: 358
@@ -10031,7 +10376,8 @@ LWA-358:
     pola_fpga_num: 62
     polb_fpga_num: 63
     corr_num: 159
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-359:
     antname: LWA-359
     antnumber: 359
@@ -10060,7 +10406,8 @@ LWA-359:
     pola_fpga_num: 60
     polb_fpga_num: 61
     corr_num: 254
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-360:
     antname: LWA-360
     antnumber: 360
@@ -10089,7 +10436,8 @@ LWA-360:
     pola_fpga_num: 60
     polb_fpga_num: 61
     corr_num: 62
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-361:
     antname: LWA-361
     antnumber: 361
@@ -10118,7 +10466,8 @@ LWA-361:
     pola_fpga_num: 60
     polb_fpga_num: 61
     corr_num: 158
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-362:
     antname: LWA-362
     antnumber: 362
@@ -10147,7 +10496,8 @@ LWA-362:
     pola_fpga_num: 60
     polb_fpga_num: 61
     corr_num: 30
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-363:
     antname: LWA-363
     antnumber: 363
@@ -10176,7 +10526,8 @@ LWA-363:
     pola_fpga_num: 60
     polb_fpga_num: 61
     corr_num: 94
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-364:
     antname: LWA-364
     antnumber: 364
@@ -10205,7 +10556,8 @@ LWA-364:
     pola_fpga_num: 62
     polb_fpga_num: 63
     corr_num: 127
-    notes: ""
+    notes: ''
+    ant_type: Fiber
 LWA-365:
     antname: LWA-365
     antnumber: 365
@@ -10234,4 +10586,5 @@ LWA-365:
     pola_fpga_num: 60
     polb_fpga_num: 61
     corr_num: 126
-    notes: ""
+    notes: ''
+    ant_type: Fiber
