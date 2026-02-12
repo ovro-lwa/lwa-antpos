@@ -34,7 +34,39 @@
 
 __all__ = ("get_git_version")
 
+import re
 from subprocess import Popen, PIPE
+
+
+def _git_describe_to_pep440(version_str):
+    """Convert git-describe output to a PEP 440 compliant version.
+
+    Examples:
+        "0.6.12" -> "0.6.12"
+        "0.6.12-7-g66581a2" -> "0.6.12.post7+g66581a2"
+        "0.6.12-7-g66581a2-dirty" -> "0.6.12.post7+g66581a2.dirty"
+    """
+    if not version_str or version_str is None:
+        return None
+    version_str = version_str.strip()
+    # Strip -dirty so we can handle it separately
+    dirty = False
+    if version_str.endswith("-dirty"):
+        version_str = version_str[:-6]  # len("-dirty") == 6
+        dirty = True
+    # Match tag-N-gSHORT_HASH (e.g. 0.6.12-7-g66581a2)
+    match = re.match(r"^(.+)-(\d+)-g([a-f0-9]+)$", version_str)
+    if match:
+        tag, commits, short_hash = match.groups()
+        # PEP 440: use .postN for commits after tag, + for local version
+        pep440 = "{}.post{}+{}".format(tag, commits, short_hash)
+        if dirty:
+            pep440 += ".dirty"
+        return pep440
+    # Plain tag (e.g. 0.6.12) or unknown format: return as-is if no dirty
+    if dirty:
+        version_str = version_str + "+dirty"
+    return version_str
 
 
 def call_git_describe(abbrev):
@@ -91,29 +123,30 @@ def get_git_version(abbrev=7):
 
     # First try to get the current version using “git describe”.
 
-    version = call_git_describe(abbrev).decode('UTF-8')
-    if is_dirty():
-        version += "-dirty"
+    raw = call_git_describe(abbrev)
+    if raw is not None:
+        version = raw.decode("UTF-8").strip()
+        if is_dirty():
+            version += "-dirty"
+        version = _git_describe_to_pep440(version)
+    else:
+        version = None
 
     # If that doesn't work, fall back on the value that's in
-    # RELEASE-VERSION.
-
+    # RELEASE-VERSION (and normalize it to PEP 440 if needed).
     if version is None:
-        version = release_version
+        version = _git_describe_to_pep440(release_version) if release_version else None
 
     # If we still don't have anything, that's an error.
-
     if version is None:
         raise ValueError("Cannot find the version number!")
 
     # If the current version is different from what's in the
     # RELEASE-VERSION file, update the file to be current.
-
     if version != release_version:
         write_release_version(version)
 
-    # Finally, return the current version.
-
+    # Finally, return the current version (PEP 440 compliant).
     return version
 
 
