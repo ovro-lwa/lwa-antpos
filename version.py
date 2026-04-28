@@ -35,6 +35,7 @@
 __all__ = ("get_git_version")
 
 from subprocess import Popen, PIPE
+import re
 
 
 def call_git_describe(abbrev):
@@ -84,6 +85,31 @@ def write_release_version(version):
     f.close()
 
 
+def pep440_from_describe(describe):
+    if describe is None:
+        return None
+
+    # git tags are often prefixed with "v", which is not needed in PEP 440.
+    describe = describe.lstrip("v")
+
+    # Exact tag, e.g. "1.2.0"
+    if re.match(r"^[0-9]+(?:\.[0-9]+)*$", describe):
+        return describe
+
+    # git describe output for non-tag commits:
+    # "<tag>-<distance>-g<sha>" -> "<tag>.dev<distance>+g<sha>"
+    parts = describe.rsplit("-", 2)
+    if len(parts) == 3:
+        tag, distance, gsha = parts
+        if gsha.startswith("g") and distance.isdigit():
+            tag = tag.lstrip("v")
+            return "%s.dev%s+%s" % (tag, distance, gsha)
+
+    # Fallback: sanitize unknown formats into a conservative local version.
+    normalized = re.sub(r"[^A-Za-z0-9\.]+", ".", describe).strip(".")
+    return "0+%s" % normalized if normalized else "0"
+
+
 def get_git_version(abbrev=7):
     # Read in the version that's currently in RELEASE-VERSION.
 
@@ -91,9 +117,15 @@ def get_git_version(abbrev=7):
 
     # First try to get the current version using “git describe”.
 
-    version = call_git_describe(abbrev).decode('UTF-8')
-    if is_dirty():
-        version += "-dirty"
+    describe = call_git_describe(abbrev)
+    if describe is not None:
+        describe = describe.decode('UTF-8')
+    version = pep440_from_describe(describe)
+    if version is not None and is_dirty():
+        if "+" in version:
+            version += ".dirty"
+        else:
+            version += "+dirty"
 
     # If that doesn't work, fall back on the value that's in
     # RELEASE-VERSION.
